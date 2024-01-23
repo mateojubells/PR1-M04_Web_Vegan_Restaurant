@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Vegano</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="/Css/header.css">
+    <link rel="stylesheet" href="/Css/index.css">
+</head>
+<body>
+  <header>
+    <div class="grid-container-2">
+      <a class="foto" href="./index.html" ><img class="imagen" src="./imagenes/logopractica1.png" alt=""></a>
+      <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
+      <a href="/html/Productos.html" class="items sub-item" id="txt_header_nosotros">Productos</a>
+      <a href="/html/pedido.html" class="items sub-item" id="txt_header_experiencias">Pedido</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_header_contactanos">Reserva</a>
+     </div>
+      <div class="botonesidioma">
+        <button onclick="changeLanguage('ca')">Cat</button>
+        <button onclick="changeLanguage('es')">Esp</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+      <script src="./javaScript/index.js"></script>
+  </header> 
+  <main>
+  <section class="section1">
+
+    <div class="fondotextop">
+      <a class="textop" id="txt_section1">RESTAURANTE 100% VEGANO</a>
+    </div>
+    <img class="imgIndex" src="/PracticaFinal_Kiosc/imagenes/fondoIndex.webp" alt="">
+  </section>
+
+
+
+
+  <!-- Servicios -->
+  <section class="section2">
+    <h2 class="titulo-section2" id="txt_section2">Descubre nuestos servicios</h2>
+    <div class="grid-layout">
+      <div id="boda" class="card-container">
+        <img
+        src="/imagenes/comerAqui.png"
+        alt=""
+        />
+        <h3 id="txt_boda">COMER AQUI</h3>
+        <p class="text" id="descripcion_boda">
+          Descubre el placer en cada bocado de nuestro rincón vegano
+        </p>
+      </div>
+
+      <div id="convencion" class="card-container">
+        <img
+        src="/imagenes/takeaway.jpg"
+        alt=""
+        />
+        <h3 id="txt_convencion">TAKE AWAY</h3>
+        <p class="text" id="descripcion_convencion">
+         Disfruta de la misma comida en casa
+        </p>
+      </div>
+ </div>
+      
+
+  </section>
+
+  </main>
+<a href="./servicios.html" class="b-see-more" id="txt_ver_mas">VER MÁS</a>
+  <footer class="footer">
+    <ul class="lastcolumnfooter">
+      <li><img src="./imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
+    </ul>
+    <ul class="secondfooter">
+      <li ><a class="itemsfooter" href="./servicios.html" id="txt_serviciosFooter">Servicios</a> </li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="./SobreNosotros.html" id="txt_sobreNosotrosFooter">Productos</a></li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="./Experiencias.html" id="txt_experienciasFooter">Experiencias</a></li>
+    </ul>
+    <ul class="lastcolumnfooter">
+      <li><a href="./Contactanos.html" class="contactfooter" id="txt_contactanosFooter">Reserva</a></li>
+    </ul>
+    
+  </footer>
+</body>
+</html>

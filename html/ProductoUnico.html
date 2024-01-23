@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebida Refrescante</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/ProductoUnico.css">
+
+</head>
+<body>
+  <header>
+    <div class="grid-container-2">
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.png" alt=""></a>
+      <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
+      <a href="/html/Productos.html" class="items sub-item" id="txt_header_nosotros">Productos</a>
+      <a href="/html/pedido.html" class="items sub-item" id="txt_header_experiencias">Pedido</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_header_contactanos">Reserva</a>
+     </div>
+      <div class="botonesidioma">
+        <button onclick="changeLanguage('ca')">Cat</button>
+        <button onclick="changeLanguage('es')">Esp</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+      <script src="./javaScript/index.js"></script>
+  </header> 
+
+</body>
+<main class="product-page">
+    <article class="product-details">
+      <img src="../imagenes/bebidavegana.webp" alt="Bebida Refrescante">
+      <h2>Bebida Refrescante</h2>
+      <p>Una bebida refrescante y natural para acompañar tu comida vegana.</p>
+      <p class="price">$3.99</p>
+    </article>
+
+    <section class="options">
+      <h3>Opciones:</h3>
+      <label>
+        <input type="radio" name="salsa" value="con_hielo">
+        Con Hielo
+      </label>
+      <label>
+        <input type="radio" name="salsa" value="sin_hielo">
+        Sin Hielo
+      </label>
+    </section>
+
+    <button id="addToCart">Añadir al Pedido</button>
+  </main>
+  <p class="barra"><br><br></p>
+  <footer class="footer">
+    <ul class="lastcolumnfooter">
+      <li><img src="../imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
+    </ul>
+    <ul class="secondfooter">
+      <li ><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/servicios.html" id="txt_serviciosFooter">Servicios</a> </li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/SobreNosotros.html" id="txt_sobreNosotrosFooter">Sobre Nosotros</a></li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/Experiencias.html" id="txt_experienciasFooter">Experiencias</a></li>
+    </ul>
+    <ul class="lastcolumnfooter">
+      <li><a href="/UF1/PracticaFinal_Kiosc/html/Contactanos.html" class="contactfooter" id="txt_contactanosFooter">Contactanos</a></li>
+    </ul>
+  </footer>
+
+
+</html>

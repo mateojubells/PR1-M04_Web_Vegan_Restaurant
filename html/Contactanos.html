@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my hello world website description">
+  <meta name="keywords" content="web, web development, hello world">
+  <title>Contacta con nosotros</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/contactanos.css"> 
+       <link rel="stylesheet" href="../Css/header.css">
+</head>
+<body>
+  <header>
+    <div class="grid-container-2">
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.png" alt=""></a>
+      <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
+      <a href="/html/Productos.html" class="items sub-item" id="txt_header_nosotros">Productos</a>
+      <a href="/html/pedido.html" class="items sub-item" id="txt_header_experiencias">Pedido</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_header_contactanos">Reserva</a>
+     </div>
+      <div class="botonesidioma">
+        <button onclick="changeLanguage('ca')">Cat</button>
+        <button onclick="changeLanguage('es')">Esp</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+      <script src="./javaScript/index.js"></script>
+  </header>  
+  
+  <div>
+    <h1 class="tituloForm" id="txt_titoloForm">Contacte con nostoros rellenando este formulario</h1>
+  </div>
+ <main>
+  <section class="section1contact">
+    <div class="texto-contact" id="txt_contacta_con_nosotros">Contacta con nosotros a traves de este formulario y le enviaremos la confirmacion de la reserva. </div>
+<div class="divimagen"><img class="imagen-contacto" src="https://momobel.com/sites/default/files/decoracion_para_restaurantes_estilo_moderno.jpg" alt=""></div>
+  </section>
+  <section class="section2contact">
+
+   
+        <form name="Rellene" method="Post" data-netlify="true">
+          <div class="form-group">
+            <label for="first name" id="txt_firstName">Nombre</label>
+            <input type="text" id="first name" name="first-name">
+          </div>
+          <div class="form-group">
+            <label for="Last name" id="txt_lastName">Apellido</label>
+          <input type="text" id="last name" name="last-name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="is-required" id="txt_email">Email</label>
+            <input type="email" id="Email" name="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="welcome-massage" id="txt_CExplicacion">Dia de la reserva</label>
+            <input type=date min=2024-01-30>
+        </div>
+        <div class="form-group">
+            <label for="welcome-massage" id="txt_CExplicacion">Numero de persones</label>
+              <select id="numero_personas" name="numero_personas" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+        </div>
+        <div class="form-group">
+          <label for="welcome-massage" id="txt_CExplicacion">Para reservas de mas de 6 personas, llamar al 653201489</label>
+        </div>
+       
+  
+          <button type="submit" class="btn">Register</button>
+        </form>
+  </section>
+</main>
+<p class="barra"><br><br></p>
+<footer class="footer">
+  <ul class="lastcolumnfooter">
+    <li><img src="../imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
+  </ul>
+  <ul class="secondfooter">
+    <li ><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/servicios.html" id="txt_serviciosFooter">Servicios</a> </li>
+    <span class="span"></span>
+    <li><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/SobreNosotros.html" id="txt_sobreNosotrosFooter">Sobre Nosotros</a></li>
+    <span class="span"></span>
+    <li><a class="itemsfooter" href="/UF1/PracticaFinal_Kiosc/html/Experiencias.html" id="txt_experienciasFooter">Experiencias</a></li>
+  </ul>
+  <ul class="lastcolumnfooter">
+    <li><a href="/UF1/PracticaFinal_Kiosc/html/Contactanos.html" class="contactfooter" id="txt_contactanosFooter">Reserva</a></li>
+  </ul>
+  
+</footer>
+</body>
+
+</html>

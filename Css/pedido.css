@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #37795f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  main.order-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-details {
+    text-align: center;
+  }
+  
+  .order-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .order-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-details li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-details .product-name {
+    flex: 2;
+  }
+  
+  .order-details .quantity {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .order-details .price {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .order-details .total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .order-details .total span {
+    display: block;
+  }
+  
+  .order-details .total-price {
+    color: #37795f;
+  }
+  
+  button#payButton {
+    background-color: #37795f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+  }
+  
+
+  
