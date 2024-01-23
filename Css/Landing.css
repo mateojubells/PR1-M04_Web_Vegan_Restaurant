@@ -1,0 +1,166 @@
+main{
+    background-color:rgb(231,231,231);
+    }
+    
+    .section1{
+    height: 630px;
+    position: relative;
+    background-color:#c3f7ad;
+    display: flex;
+    justify-content: center; 
+    }
+    
+    .section1::after {
+    content:'';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    }
+    .mitad {
+    flex: 1; /* Hace que ambos elementos ocupen la misma cantidad de espacio */
+    }
+
+    .mitad1{
+    position: relative;
+    padding: 40px;
+    padding-top: 100px;
+
+    }
+    
+    .imagenP{
+        margin-top: 70px;
+        box-sizing: border-box;
+        border:black;
+        border-radius: 20px;
+        border-width: 2px;
+        width: 70%;
+        height: 60%;
+        margin-left: 20px;
+    }
+   
+    .tituloP{
+    position: relative;
+    font-size: 60px;
+        
+    }
+    .descripcion{
+        padding-top: 20px;
+        position: absolute;
+    }
+    
+     .titulo-section2{
+    text-align: center;
+    margin-top: 40px;
+    font-size:22px;
+    }
+    /* Servicios */
+    
+    .grid-layout {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "boda convencion"
+    "more more";
+    justify-content: space-around;
+    }
+    .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 325px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem 5rem 2rem 5rem;
+    margin-top: 60px;
+    }
+    
+    .card-container:hover {
+    box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+    .card-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+    
+    .card-container .text {
+    padding: 5px 20px 50px 20px;
+    font-size: 16px;
+    }
+    
+    .card-container h3 {
+    padding: 5px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    }
+    
+    .b-see-more{
+    width: 100%;
+    background-color: rgb(55,121,95);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+    }
+    
+    
+    #b-see-more:hover{
+    cursor: pointer;
+    box-shadow: 8px;
+    background-color: rgb(44, 97, 61);
+    }
+    
+    #boda {grid-area: boda;}
+    #convencion {grid-area: convencion;}
+    #b-see-more {grid-area: more;}
+    
+    /* MOVIL */
+    
+    #boda {
+    grid-area: boda;
+    }
+    #convencion {
+    grid-area: convencion;
+    }
+    @media (max-width:480px){
+    main{
+    display:inline-block;
+    height: 1550px;
+    width: 100%;
+    }
+    body{
+    margin: 0px;
+    }
+    .section2{
+    display: inline;
+    }
+    .textop{
+    font-size: 20px;
+    }
+    .fondotextop{
+    width: 50%;
+    }
+    .card-container{
+    width: 280px;
+    }
+    .grid-layout{
+    grid-template-areas:
+    'boda'
+    'convencion'
+    ;
+    }
+    .imgIndex{
+        background-position: left center;
+    }
+    }
+    

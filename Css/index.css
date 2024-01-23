@@ -150,4 +150,7 @@ grid-template-areas:
 'convencion'
 ;
 }
+.imgIndex{
+    background-position: left center;
+}
 }
