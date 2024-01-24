@@ -1,0 +1,104 @@
+.about-section h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.content {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Telefono */
+  h1{
+    padding-top: 20px;
+  }
+  main{
+    padding: 0;
+  }
+  .about-us{
+    width: 100%;
+    padding: 0;
+  }
+  .about-section{
+    width: 100%;
+    padding: 0;
+    text-align: justify; /* Justificar el texto dentro de la sección */
+  }
+
+  
+
+}
+
+@media (min-width: 480px), (max-width: 1185px) {
+  /* Tablet */
+  h1{
+    padding: 40px;
+  }
+  
+  .content{
+    padding: 0;
+    margin: 0;
+  }
+  .about-section p{
+    font-size: 14px;
+    padding: 15px;
+    max-width: 100%;
+  }
+  main{
+    padding: 0;
+  }
+  .about-us{
+    width: 100%;
+    padding: 0;
+  }
+  .about-section{
+    width: 100%;
+    padding: 0;
+    text-align: justify; /* Justificar el texto dentro de la sección */
+
+  }
+  .imagen1{
+    width: 40%;
+    padding: 20px;
+  }
+  
+  .imagen2{
+    width: 45%;
+    padding: 20px;
+
+  }
+}
+
+@media (min-width: 1185px){
+  /* PC */
+  .about-section p{
+    font-size: 18px;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .content{
+    padding: 30px;
+    margin: 0;
+  }
+  
+
+}
+
