@@ -16,17 +16,17 @@
   <header>
     <nav class="grid-container-2">
       <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.png" alt=""></a>
-      <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
-      <a href="/html/Menu.html" class="items sub-item" id="txt_header_nosotros">Compras</a>
-      <a href="/html/SobreNosotros.html" class="items sub-item" id="">Sobre Nosotros</a>
-      <a href="/html/Contactanos.html" class="contact" id="txt_header_contactanos">Reserva</a>
+      <a href="/html/servicios.html" class="items sub-item" id="txt_servicios_FOHE">Servicios</a>
+      <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras">Compras</a>
+      <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_sobreNosotros">Sobre Nosotros</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_reserva">Reserva</a>
      </nav>
       <div class="botonesidioma">
         <button onclick="changeLanguage('ca')">Cat</button>
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
       </div>
-      <script src="./javaScript/index.js"></script>
+      <script src="/javaScript/contactanos.js"></script>
   </header>  
   
   <div>
@@ -40,7 +40,7 @@
   <section class="section2contact">
 
    
-        <form name="Rellene" method="Post" data-netlify="true">
+        <form name="Rellene" method="post" data-netlify="true">
           <div class="form-group">
             <label for="first name" id="txt_firstName">Nombre</label>
             <input type="text" id="first name" name="first-name">
@@ -54,11 +54,11 @@
             <input type="email" id="Email" name="Email" required>
           </div>
           <div class="form-group">
-            <label for="welcome-massage" id="txt_CExplicacion">Dia de la reserva</label>
+            <label for="welcome-massage" id="txt_diaDeReserva">Dia de la reserva</label>
             <input type=date min=2024-01-30>
         </div>
         <div class="form-group">
-            <label for="welcome-massage" id="txt_CExplicacion">Numero de persones</label>
+            <label for="welcome-massage" id="txt_numPersonas">Numero de persones</label>
               <select id="numero_personas" name="numero_personas" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -69,7 +69,7 @@
               </select>
         </div>
         <div class="form-group">
-          <label for="welcome-massage" id="txt_CExplicacion">Para reservas de mas de 6 personas, llamar al 653201489</label>
+          <label for="welcome-massage" id="txt_masInfo">Para reservas de mas de 6 personas, llamar al 653201489</label>
         </div>
        
   
@@ -83,14 +83,14 @@
     <li><img src="../imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
   </ul>
   <ul class="secondfooter">
-    <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_serviciosFooter">Servicios</a> </li>
+    <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_servicios_FOHE">Servicios</a> </li>
       <span class="span"></span>
-      <li><a class="itemsfooter" href="/html/Productos.html" id="txt_sobreNosotrosFooter">Productos</a></li>
+      <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_sobreNosotros">Sobre Nosotros</a></li>
       <span class="span"></span>
-      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_ProductosFooter">Pedido</a></li>
+      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_Pedido">Pedido</a></li>
     </ul>
     <ul class="lastcolumnfooter">
-      <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_contactanosFooter">Reserva</a></li>
+      <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_reserva">Reserva</a></li>
   </ul>
   
 </footer>
