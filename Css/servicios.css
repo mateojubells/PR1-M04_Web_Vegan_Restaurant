@@ -3,8 +3,7 @@
   grid-gap: 1rem;
   grid-template-areas:
     "title title"
-    "boda convencion"
-    "congreso personalizado";
+    "menu takeaway" ;
 }
 
 main {
@@ -61,18 +60,13 @@ h1 {
   text-align: center;
 }
 
-#boda {
-  grid-area: boda;
+#menu {
+  grid-area: menu;
 }
-#convencion {
-  grid-area: convencion;
+#takeaway {
+  grid-area: takeaway;
 }
-#congreso {
-  grid-area: congreso;
-}
-#personalizado {
-  grid-area: personalizado;
-}
+
 #title-section {
   grid-area: title;
 }
@@ -83,10 +77,8 @@ h1 {
   .grid-layout {
     grid-template-areas:
       "title"
-      "boda"
-      "convencion"
-      "congreso"
-      "personalizado";
+      "menu"
+      "takeaway";
   }
   .card-container {
     display: flex;
@@ -101,10 +93,8 @@ h1 {
   .grid-layout {
     grid-template-areas:
       "title"
-      "boda"
-      "convencion"
-      "congreso"
-      "personalizado";
+      "menu"
+      "takeaway";
   }
   .card-container {
     display: flex;
@@ -120,11 +110,10 @@ padding: 10px;  }
     grid-gap: 1rem;
     grid-template-areas:
       "title title"
-      "boda convencion"
-      "congreso personalizado";
+      "menu takeaway";
   }
 
   .card-container {
     width: 500px;
-padding: 10px;  }
+    padding: 10px;  }
 }

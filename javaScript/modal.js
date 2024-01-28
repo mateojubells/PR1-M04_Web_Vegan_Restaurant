@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   
-    // Muestra el modal después de 3 segundos (3000 milisegundos)
     setTimeout(function(){
       modal.style.display = "block";
     }, 3000);

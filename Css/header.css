@@ -28,7 +28,7 @@ header .items{
     color: white;
 }
 
-.sub-item:hover{
+header .sub-item:hover{
 transform: scale(1.2);
 }
 .contact{ 
