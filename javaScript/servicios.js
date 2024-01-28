@@ -17,26 +17,20 @@ async function changeLanguage(lang) {
 
   // Canviar els texts (Aquesta és la part que heu de modificar)
 
-  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios
-  document.getElementById('txt_header_nosotros').innerHTML = data.txt_header_nosotros
-  document.getElementById('txt_header_experiencias').innerHTML = data.txt_header_experiencias
-  document.getElementById('txt_header_contactanos').innerHTML = data.txt_header_contactanos
+  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios;
+  document.getElementById('txt_header_compras').innerHTML = data.txt_header_compras;
+  document.getElementById('txt_header_sobreNosotros').innerHTML = data.txt_header_sobreNosotros;
+  document.getElementById('txt_header_reserva').innerHTML = data.txt_header_reserva;
+  document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
+  document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
+  document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
+  document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
 
-  //Serveis
-  document.getElementById('txt_servicios').innerHTML = data.txt_servicios
-  document.getElementById('txt_boda').innerHTML = data.txt_boda
-  document.getElementById('descripcion_boda').innerHTML = data.descripcion_boda
-  document.getElementById('txt_convencion').innerHTML = data.txt_convencion
-  document.getElementById('descripcion_convencion').innerHTML = data.descripcion_convencion
-  document.getElementById('txt_congreso').innerHTML = data.txt_congreso
-  document.getElementById('descripcion_congreso').innerHTML = data.descripcion_congreso
-  document.getElementById('txt_personalizado').innerHTML = data.txt_personalizado
-  document.getElementById('descripcion_personalizado').innerHTML = data.descripcion_personalizado
+  //cambiar
 
+  document.getElementById('txt_servicios').innerHTML = data.txt_servicios;
+  document.getElementById('txt_comerAqui').innerHTML = data.txt_comerAqui;
+  document.getElementById('descripcion_menu').innerHTML = data.descripcion_menu;
+  document.getElementById('txt_descripcion_takeAway').innerHTML = data.txt_descripcion_takeAway;
 
-//Footer
-  document.getElementById('txt_serviciosFooter').innerHTML = data.txt_serviciosFooter
-  document.getElementById('txt_sobreNosotrosFooter').innerHTML = data.txt_sobreNosotrosFooter
-  document.getElementById('txt_experienciasFooter').innerHTML = data.txt_experienciasFooter
-  document.getElementById('txt_contactanosFooter').innerHTML = data.txt_contactanosFooter
-}
+}  

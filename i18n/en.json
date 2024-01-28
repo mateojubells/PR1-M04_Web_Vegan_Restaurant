@@ -10,6 +10,11 @@
   "txt_footer_Pedido": "Order",
   "txt_footer_reserva": "Reservation",
 
+  "txt_header_menu": "Menu",
+  "txt_header_productoEspecial": "Specialty Product",
+  "txt_header_pedido": "Order",
+
+
 
   "txt_titoloForm": "Contact us by filling out this form",
   "txt_contacta_con_nosotros": "Contact us through this form, and we will send you the reservation confirmation.",
@@ -23,6 +28,30 @@
   "txt_nuestraHistoria": "Our Story",
   "txt_textIntroduccio": "Welcome to our vegan restaurant! Immerse yourself in an exceptional culinary experience where the passion for healthy and delicious food intertwines with a unique and captivating narrative. From the beginning of our journey, our longing has been to share the joy and benefits of a plant-based diet. Every delightful bite we offer not only pleases the palate but also represents a commitment to transforming lives through healthy and sustainable food choices. Discover the magic of our gastronomic proposal, where each dish is a masterpiece created with fresh and consciously selected ingredients. We invite you to join us on this exciting journey towards a healthier and more delicious life!",
   "txt_nuestraFilosofia": "Our Philosophy",
-  "txt_textIntroduccio2": "At the heart of our restaurant lies a philosophy rooted in respect for life and the planet. We believe that every choice matters, and that's why we strive to offer tasty choices that nourish both the body and soul. Join us on this journey towards a healthier and more sustainable lifestyle."
+  "txt_textIntroduccio2": "At the heart of our restaurant lies a philosophy rooted in respect for life and the planet. We believe that every choice matters, and that's why we strive to offer tasty choices that nourish both the body and soul. Join us on this journey towards a healthier and more sustainable lifestyle.",
 
+  "txt_servicios": "Services",
+  "txt_comerAqui": "Dine-In",
+  "descripcion_menu": "Discover culinary delight at our leading vegan restaurant. Welcome to the ultimate destination for an unforgettable vegan dining experience!",
+  "txt_descripcion_takeAway": "Take vegan excellence with you. Our take-away service offers the same refinement and quality in every bite, ready to enjoy wherever you are.",
+
+  "txt_bebidaRefrescante": "Refreshing Drink",
+  "txt_bebidaRefrescanteDesc": "A refreshing and natural beverage to accompany your vegan meal.",
+  "txt_puddingChia": "Chia Pudding",
+  "txt_puddingChiaDesc": "A delicious and healthy snack to satisfy your cravings.",
+  "txt_hamburguesaVegana": "Vegan Burger",
+  "txt_hamburguesaVeganaDesc": "A delightful vegan burger with fresh and flavorful ingredients.",
+  "txt_ensaladaFresca": "Fresh Salad",
+  "txt_ensaladaFrescaDesc": "A fresh salad with a variety of vegetables and vegan dressing.",
+  "txt_smoothie": "Energizing Smoothie",
+  "txt_smoothieDesc": "An energy-packed smoothie with fresh fruits and plant-based milk.",
+  "txt_pizza": "Vegan Pizza",
+  "txt_pizzaDesc": "A vegan pizza with a crispy crust and delicious toppings.",
+  "txt_tacos": "Vegan Tacos",
+  "txt_tacosDesc": "Tacos filled with fresh and flavorful vegan ingredients.",
+  "txt_pastelChoco": "Chocolate Cake",
+  "txt_pastelChocoDesc": "A decadent and delicious vegan chocolate cake.",
+  "txt_ofertaEspecial": "Special Offer!",
+  "txt_ofertaEspecialDesc": "Buy two snacks and get the third one for free."
+  
 }

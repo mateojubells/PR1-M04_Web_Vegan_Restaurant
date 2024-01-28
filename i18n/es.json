@@ -9,6 +9,10 @@
   "txt_footer_Pedido": "Pedido",
   "txt_footer_reserva": "Reserva",
 
+  "txt_header_menu": "Menu",
+  "txt_header_productoEspecial": "Producto Especial",
+  "txt_header_pedido": "Pedido",
+
 
   "txt_titoloForm": "Contacte con nostoros rellenando este formulario",
   "txt_contacta_con_nosotros": "Contacta con nosotros a traves de este formulario y le enviaremos la confirmacion de la reserva.",
@@ -22,6 +26,29 @@
   "txt_nuestraHistoria": "Nuestra Historia",
   "txt_textIntroduccio": "¡Bienvenido a nuestro restaurante vegano! Sumérgete en una experiencia culinaria excepcional, donde la pasión por la comida sana y deliciosa se entrelaza con una narrativa única y cautivadora. Desde el inicio de nuestro viaje, nuestro anhelo ha sido compartir la alegría y los beneficios de una dieta basada en plantas. Cada bocado delicioso que ofrecemos no solo deleita el paladar, sino que también representa un compromiso con transformar vidas mediante opciones alimenticias saludables y sostenibles. Descubre la magia de nuestra propuesta gastronómica, donde cada platillo es una obra maestra creada con ingredientes frescos y conscientemente seleccionados. ¡Te invitamos a unirte a nosotros en este emocionante viaje hacia una vida más saludable y deliciosa!",
   "txt_nuestraFilosofia": "Nuestra Filosofía",
-  "txt_textIntroduccio2": "En el corazón de nuestro restaurante se encuentra una filosofía arraigada en el respeto por la vida y el planeta. Creemos que cada elección cuenta, y es por eso que nos esforzamos por ofrecer opciones sabrosas que nutren tanto el cuerpo como el alma. Únete a nosotros en este viaje hacia un estilo de vida más saludable y sostenible."
+  "txt_textIntroduccio2": "En el corazón de nuestro restaurante se encuentra una filosofía arraigada en el respeto por la vida y el planeta. Creemos que cada elección cuenta, y es por eso que nos esforzamos por ofrecer opciones sabrosas que nutren tanto el cuerpo como el alma. Únete a nosotros en este viaje hacia un estilo de vida más saludable y sostenible.",
+  
+  "txt_servicios": "Servicios",
+  "txt_comerAqui": "Comer aqui",
+  "descripcion_menu": "Descubre el deleite culinario en nuestro restaurante vegano líder.¡Bienvenido al mejor destino para una comida vegana inolvidable!",
+  "txt_descripcion_takeAway": "Lleva la excelencia vegana contigo. Nuestro servicio de take away te ofrece la misma exquisitez y calidad en cada bocado, listo para disfrutar donde quieras.",
 
+  "txt_bebidaRefrescante": "Bebida Refrescante",
+  "txt_bebidaRefrescanteDesc": "Una bebida refrescante y natural para acompañar tu comida vegana.",
+  "txt_puddingChia": "Pudding de chia",
+  "txt_puddingChiaDesc": "Un snack delicioso y saludable para satisfacer tus antojos.",
+  "txt_hamburguesaVegana": "Hamburguesa Vegana",
+  "txt_hamburguesaVeganaDesc": "Una deliciosa hamburguesa vegana con ingredientes frescos y sabrosos.",
+  "txt_ensaladaFresca": "Ensalada Fresca",
+  "txt_ensaladaFrescaDesc": "Una ensalada fresca con una variedad de vegetales y aderezo vegano.",
+  "txt_smoothie": "Smoothie Energizante",
+  "txt_smoothieDesc": "Un smoothie lleno de energía con frutas frescas y leche vegetal.",
+  "txt_pizza": "Pizza Vegana",
+  "txt_pizzaDesc": "Una pizza vegana con una base crujiente y toppings deliciosos.",
+  "txt_tacos": "Tacos Veganos",
+  "txt_tacosDesc": "Tacos rellenos de ingredientes veganos frescos y sabrosos.",
+  "txt_pastelChoco": "Pastel de Chocolate",
+  "txt_pastelChocoDesc": "Un pastel de chocolate vegano decadente y delicioso.",
+  "txt_ofertaEspecial": "¡Oferta Especial!",
+  "txt_ofertaEspecialDesc": "Compra dos snacks y obtén el tercero gratis."
 }

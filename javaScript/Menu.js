@@ -1,5 +1,5 @@
-// Obtenir l'idioma de la URL si existeix i executar la funció "changeLanguage"
-const querystring = window.location.search; // Si la url és: https://miweb.es?lang=es , retorna ?lang=es
+// Obtener el idioma de la URL si existe y ejecutar la función "changeLanguage"
+const querystring = window.location.search; // Si la URL es: https://miweb.es?lang=es, retorna ?lang=es
 const urlParams = new URLSearchParams(querystring);
 if (urlParams.get('lang')){
   const lang = urlParams.get('lang');
@@ -7,34 +7,42 @@ if (urlParams.get('lang')){
 }
 
 async function changeLanguage(lang) {
-  // Guardar l'idioma a la URL
+  // Guardar el idioma en la URL
   const newURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?lang=' + lang;
   window.history.replaceState({}, '', newURL);
 
-  // Obtenir el fitxer json corresponent
+  // Obtener el archivo json correspondiente
   const response = await fetch(`../i18n/${lang}.json`);
   const data = await response.json();
 
-  // Canviar els texts (Aquesta és la part que heu de modificar)
+  // Cambiar los textos (Esta es la parte que debes modificar)
 
-  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios
-  document.getElementById('txt_header_nosotros').innerHTML = data.txt_header_nosotros
-  document.getElementById('txt_header_experiencias').innerHTML = data.txt_header_experiencias
-  document.getElementById('txt_header_contactanos').innerHTML = data.txt_header_contactanos
+  document.getElementById('txt_header_menu').innerHTML = data.txt_header_menu;
+  document.getElementById('txt_header_productoEspecial').innerHTML = data.txt_header_productoEspecial;
+  document.getElementById('txt_header_pedido').innerHTML = data.txt_header_pedido;
 
-  document.getElementById('txt_section1').innerHTML = data.txt_section1
-  document.getElementById('txt_section2').innerHTML = data.txt_section2
-  //Serveis
-  document.getElementById('txt_boda').innerHTML = data.txt_boda
-  document.getElementById('descripcion_boda').innerHTML = data.descripcion_boda
-  document.getElementById('txt_convencion').innerHTML = data.txt_convencion
-  document.getElementById('descripcion_convencion').innerHTML = data.descripcion_convencion
+  document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
+  document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
+  document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
+  document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
 
-  document.getElementById('txt_ver_mas').innerHTML = data.txt_ver_mas
-
-//Footer
-  document.getElementById('txt_serviciosFooter').innerHTML = data.txt_serviciosFooter
-  document.getElementById('txt_sobreNosotrosFooter').innerHTML = data.txt_sobreNosotrosFooter
-  document.getElementById('txt_experienciasFooter').innerHTML = data.txt_experienciasFooter
-  document.getElementById('txt_contactanosFooter').innerHTML = data.txt_contactanosFooter
+  // Nuevos cambios
+  document.getElementById('txt_bebidaRefrescante').innerHTML = data.txt_bebidaRefrescante;
+  document.getElementById('txt_bebidaRefrescanteDesc').innerHTML = data.txt_bebidaRefrescanteDesc;
+  document.getElementById('txt_puddingChia').innerHTML = data.txt_puddingChia;
+  document.getElementById('txt_puddingChiaDesc').innerHTML = data.txt_puddingChiaDesc;
+  document.getElementById('txt_hamburguesaVegana').innerHTML = data.txt_hamburguesaVegana;
+  document.getElementById('txt_hamburguesaVeganaDesc').innerHTML = data.txt_hamburguesaVeganaDesc;
+  document.getElementById('txt_ensaladaFresca').innerHTML = data.txt_ensaladaFresca;
+  document.getElementById('txt_ensaladaFrescaDesc').innerHTML = data.txt_ensaladaFrescaDesc;
+  document.getElementById('txt_smoothie').innerHTML = data.txt_smoothie;
+  document.getElementById('txt_smoothieDesc').innerHTML = data.txt_smoothieDesc;
+  document.getElementById('txt_pizza').innerHTML = data.txt_pizza;
+  document.getElementById('txt_pizzaDesc').innerHTML = data.txt_pizzaDesc;
+  document.getElementById('txt_tacos').innerHTML = data.txt_tacos;
+  document.getElementById('txt_tacosDesc').innerHTML = data.txt_tacosDesc;
+  document.getElementById('txt_pastelChoco').innerHTML = data.txt_pastelChoco;
+  document.getElementById('txt_pastelChocoDesc').innerHTML = data.txt_pastelChocoDesc;
+  document.getElementById('txt_ofertaEspecial').innerHTML = data.txt_ofertaEspecial;
+  document.getElementById('txt_ofertaEspecialDesc').innerHTML = data.txt_ofertaEspecialDesc;
 }
