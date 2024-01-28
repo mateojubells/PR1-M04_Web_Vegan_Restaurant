@@ -17,24 +17,24 @@ async function changeLanguage(lang) {
 
   // Canviar els texts (Aquesta és la part que heu de modificar)
 
-  //Header
-  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios
-  document.getElementById('txt_header_nosotros').innerHTML = data.txt_header_nosotros
-  document.getElementById('txt_header_experiencias').innerHTML = data.txt_header_experiencias
-  document.getElementById('txt_header_contactanos').innerHTML = data.txt_header_contactanos
 
-  //Contactanos
-  document.getElementById('txt_titoloForm').innerHTML = data.txt_titoloForm
-  document.getElementById('txt_contacta_con_nosotros').innerHTML = data.txt_contacta_con_nosotros
-  document.getElementById('txt_firstName').innerHTML = data.txt_firstName
-  document.getElementById('txt_lastName').innerHTML = data.txt_lastName
-  document.getElementById('txt_email').innerHTML = data.txt_email
-  document.getElementById('txt_CExplicacion').innerHTML = data.txt_CExplicacion
-  document.getElementById('txt_birthday').innerHTML = data.txt_birthday
-  document.getElementById('txt_portBarcelona').innerHTML = data.txt_portBarcelona
-  //Footer
-  document.getElementById('txt_serviciosFooter').innerHTML = data.txt_serviciosFooter
-  document.getElementById('txt_sobreNosotrosFooter').innerHTML = data.txt_sobreNosotrosFooter
-  document.getElementById('txt_experienciasFooter').innerHTML = data.txt_experienciasFooter
-  document.getElementById('txt_contactanosFooter').innerHTML = data.txt_contactanosFooter
+  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios;
+  document.getElementById('txt_header_compras').innerHTML = data.txt_header_compras;
+  document.getElementById('txt_header_sobreNosotros').innerHTML = data.txt_header_sobreNosotros;
+  document.getElementById('txt_header_reserva').innerHTML = data.txt_header_reserva;
+  document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
+  document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
+  document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
+  document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
+  
+
+  document.getElementById('txt_titoloForm').innerHTML = data.txt_titoloForm;
+  document.getElementById('txt_contacta_con_nosotros').innerHTML = data.txt_contacta_con_nosotros;
+  document.getElementById('txt_firstName').innerHTML = data.txt_firstName;
+  document.getElementById('txt_lastName').innerHTML = data.txt_lastName;
+  document.getElementById('txt_email').innerHTML = data.txt_email;
+  document.getElementById('txt_diaDeReserva').innerHTML = data.txt_diaDeReserva;
+  document.getElementById('txt_numPersonas').innerHTML = data.txt_numPersonas;
+  document.getElementById('txt_masInfo').innerHTML = data.txt_masInfo;
+
 }  

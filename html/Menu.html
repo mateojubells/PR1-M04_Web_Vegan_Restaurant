@@ -14,16 +14,16 @@
   <header>
     <nav class="grid-container-2">
       <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.png" alt=""></a>
-      <a href="/html/Menu.html" class="items sub-item" id="txt_header_nosotros">Menu</a>
-      <a href="/html/Producto.html" class="items sub-item" id="txt_header_experiencias">Producto Espcial</a>
-      <a href="/html/pedido.html" class="contact" id="txt_header_contactanos">Pedido</a>
+      <a href="/html/Menu.html" class="items sub-item" id="txt_header_menu">Menu</a>
+      <a href="/html/Producto.html" class="items sub-item" id="txt_header_productoEspecial">Producto Especial</a>
+      <a href="/html/pedido.html" class="contact" id="txt_header_pedido">Pedido</a>
      </nav>
       <div class="botonesidioma">
         <button onclick="changeLanguage('ca')">Cat</button>
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
       </div>
-      <script src="./javaScript/productos.js"></script>
+      <script src="/javaScript/Menu.js"></script>
   </header> 
 </body>
 
@@ -33,57 +33,57 @@
   <section class="menu">
     <article class="product">
       <img src="../imagenes/bebidavegana.webp" alt="Bebida Vegana">
-      <h2>Bebida Refrescante</h2>
-      <p>Una bebida refrescante y natural para acompañar tu comida vegana.</p>
+      <h2 class="items sub-item" id="txt_bebidaRefrescante">Bebida Refrescante</h2>
+      <p class="items sub-item" id="txt_bebidaRefrescanteDesc">Una bebida refrescante y natural para acompañar tu comida vegana.</p>
       <p class="price">$3.99</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/pudding.webp" alt="Snack Vegano">
-      <h2>Pudding de chia</h2>
-      <p>Un snack delicioso y saludable para satisfacer tus antojos.</p>
+      <h2 class="items sub-item" id="txt_puddingChia">Pudding de chia</h2>
+      <p class="items sub-item" id="txt_puddingChiaDesc">Un snack delicioso y saludable para satisfacer tus antojos.</p>
       <p class="price">$2.99</p>
     </article>
     <!-- Nuevos productos -->
     <article class="product">
       <img src="../imagenes/hamburguesa.webp" alt="Hamburguesa Vegana">
-      <h2>Hamburguesa Vegana</h2>
-      <p>Una deliciosa hamburguesa vegana con ingredientes frescos y sabrosos.</p>
+      <h2 class="items sub-item" id="txt_hamburguesaVegana">Hamburguesa Vegana</h2>
+      <p class="items sub-item" id="txt_hamburguesaVeganaDesc">Una deliciosa hamburguesa vegana con ingredientes frescos y sabrosos.</p>
       <p class="price">$7.99</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/ensalada.webp" alt="Ensalada Vegana">
-      <h2>Ensalada Fresca</h2>
-      <p>Una ensalada fresca con una variedad de vegetales y aderezo vegano.</p>
+      <h2 class="items sub-item" id="txt_ensaladaFresca">Ensalada Fresca</h2>
+      <p class="items sub-item" id="txt_ensaladaFrescaDesc">Una ensalada fresca con una variedad de vegetales y aderezo vegano.</p>
       <p class="price">$5.99</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/smoothie.webp" alt="Smoothie Vegano">
-      <h2>Smoothie Energizante</h2>
-      <p>Un smoothie lleno de energía con frutas frescas y leche vegetal.</p>
+      <h2 class="items sub-item" id="txt_smoothie">Smoothie Energizante</h2>
+      <p class="items sub-item" id="txt_smoothieDesc">Un smoothie lleno de energía con frutas frescas y leche vegetal.</p>
       <p class="price">$4.49</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/pizzal.webp" alt="Pizza Vegana">
-      <h2>Pizza Vegana</h2>
-      <p>Una pizza vegana con una base crujiente y toppings deliciosos.</p>
+      <h2 class="items sub-item" id="txt_pizza">Pizza Vegana</h2>
+      <p class="items sub-item" id="txt_pizzaDesc">Una pizza vegana con una base crujiente y toppings deliciosos.</p>
       <p class="price">$9.99</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/tacos_1.webp" alt="Tacos Veganos">
-      <h2>Tacos Veganos</h2>
-      <p>Tacos rellenos de ingredientes veganos frescos y sabrosos.</p>
+      <h2 class="items sub-item" id="txt_tacos">Tacos Veganos</h2>
+      <p class="items sub-item" id="txt_tacosDesc">Tacos rellenos de ingredientes veganos frescos y sabrosos.</p>
       <p class="price">$6.99</p>
     </article>
 
     <article class="product">
       <img src="../imagenes/pastel.webp" alt="Pastel Vegano">
-      <h2>Pastel de Chocolate</h2>
-      <p>Un pastel de chocolate vegano decadente y delicioso.</p>
+      <h2 class="items sub-item" id="txt_pastelChoco">Pastel de Chocolate</h2>
+      <p class="items sub-item" id="txt_pastelChocoDesc">Un pastel de chocolate vegano decadente y delicioso.</p>
       <p class="price">$8.99</p>
     </article>
   </section>
@@ -91,8 +91,8 @@
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>¡Oferta Especial!</h2>
-      <p>Compra dos snacks y obtén el tercero gratis.</p>
+      <h2 class="items sub-item" id="txt_ofertaEspecial">¡Oferta Especial!</h2>
+      <p class="items sub-item" id="txt_ofertaEspecialDesc">Compra dos snacks y obtén el tercero gratis.</p>
     </div>
   </div>
 
@@ -105,14 +105,14 @@
     <li><img src="../imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
   </ul>
   <ul class="secondfooter">
-    <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_serviciosFooter">Servicios</a> </li>
+    <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a> </li>
       <span class="span"></span>
-      <li><a class="itemsfooter" href="/html/Productos.html" id="txt_sobreNosotrosFooter">Productos</a></li>
+      <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_footer_sobreNosotros">Sobre Nosotros</a></li>
       <span class="span"></span>
-      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_ProductosFooter">Pedido</a></li>
+      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_footer_Pedido">Pedido</a></li>
     </ul>
     <ul class="lastcolumnfooter">
-      <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_contactanosFooter">Reserva</a></li>
+      <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
   </ul>
   
 </footer>

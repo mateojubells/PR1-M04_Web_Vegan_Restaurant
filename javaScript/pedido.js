@@ -16,21 +16,23 @@ async function changeLanguage(lang) {
   const data = await response.json();
 
   // Cambiar los textos
-  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios;
-  document.getElementById('txt_header_compras').innerHTML = data.txt_header_compras;
-  document.getElementById('txt_header_sobreNosotros').innerHTML = data.txt_header_sobreNosotros;
-  document.getElementById('txt_header_reserva').innerHTML = data.txt_header_reserva;
+  document.getElementById('txt_header_menu').innerHTML = data.txt_header_menu;
+  document.getElementById('txt_header_productoEspecial').innerHTML = data.txt_header_productoEspecial;
+  document.getElementById('txt_header_pedido').innerHTML = data.txt_header_pedido;
+
   document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
   document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
   document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
   document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
 
-
-  document.getElementById('txt_section1').innerHTML = data.txt_section1;
-  document.getElementById('txt_section2').innerHTML = data.txt_section2;
-  document.getElementById('txt_comerAquiIndex').innerHTML = data.txt_comerAquiIndex;
-  document.getElementById('txt_descripcioComerAqui').innerHTML = data.txt_descripcioComerAqui;
-  document.getElementById('txt_takeAwayIndex').innerHTML = data.txt_takeAwayIndex;
-  document.getElementById('txt_disfrutaCasa').innerHTML = data.txt_disfrutaCasa;
-  document.getElementById('txt_verMas').innerHTML = data.txt_verMas;
+  // Nuevos cambios
+  document.getElementById('txt_tuPedido').innerHTML = data.txt_tuPedido;
+  document.getElementById('txt_bebidaRefrescantePedido').innerHTML = data.txt_bebidaRefrescantePedido;
+  document.getElementById('txt_snackSaludable').innerHTML = data.txt_snackSaludable;
+  document.getElementById('txt_ensaladaFrescaPedido').innerHTML = data.txt_ensaladaFrescaPedido;
+  document.getElementById('txt_sopaNutritiva').innerHTML = data.txt_sopaNutritiva;
+  document.getElementById('txt_batidoEnergizante').innerHTML = data.txt_batidoEnergizante;
+  document.getElementById('txt_platoVeganoVariado').innerHTML = data.txt_platoVeganoVariado;
+  document.getElementById('txt_total').innerHTML = data.txt_total;
+  document.getElementById('payButton').innerHTML = data.payButton;
 }

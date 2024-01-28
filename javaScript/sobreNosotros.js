@@ -28,9 +28,9 @@ async function changeLanguage(lang) {
 
   //cambiar
 
-  document.getElementById('txt_servicios').innerHTML = data.txt_servicios;
-  document.getElementById('txt_comerAqui').innerHTML = data.txt_comerAqui;
-  document.getElementById('descripcion_menu').innerHTML = data.descripcion_menu;
-  document.getElementById('txt_descripcion_takeAway').innerHTML = data.txt_descripcion_takeAway;
+  document.getElementById('txt_nuestraHistoria').innerHTML = data.txt_nuestraHistoria;
+  document.getElementById('txt_textIntroduccio').innerHTML = data.txt_textIntroduccio;
+  document.getElementById('txt_nuestraFilosofia').innerHTML = data.txt_nuestraFilosofia;
+  document.getElementById('txt_textIntroduccio2').innerHTML = data.txt_textIntroduccio2;
 
 }  
