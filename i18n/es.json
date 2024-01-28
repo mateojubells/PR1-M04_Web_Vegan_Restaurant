@@ -50,5 +50,22 @@
   "txt_pastelChoco": "Pastel de Chocolate",
   "txt_pastelChocoDesc": "Un pastel de chocolate vegano decadente y delicioso.",
   "txt_ofertaEspecial": "¡Oferta Especial!",
-  "txt_ofertaEspecialDesc": "Compra dos snacks y obtén el tercero gratis."
+  "txt_ofertaEspecialDesc": "Compra dos snacks y obtén el tercero gratis.",
+
+  "txt_tuPedido": "Tu Pedido",
+  "txt_bebidaRefrescantePedido": "Bebida Refrescante",
+  "txt_snackSaludable": "Snack Saludable",
+  "txt_ensaladaFrescaPedido": "Ensalada Fresca",
+  "txt_sopaNutritiva": "Sopa Nutritiva",
+  "txt_batidoEnergizante": "Batido Energizante",
+  "txt_platoVeganoVariado": "Plato Vegano Variado",
+  "txt_total": "Total:",
+  "payButton": "Pagar",
+
+  "txt_BebidaRefrescanteProducto": "Bebida Refrescante",
+  "txt_BebidaRefrescanteProductoDesc": "Una bebida refrescante y natural para acompañar tu comida vegana.",
+  "txt_opciones": "Opciones",
+  "txt_conHielo": "Con hielo",
+  "txt_sinHielo": "Sin hielo",
+  "addToCart": "Añadir al Pedido"
 }

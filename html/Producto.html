@@ -24,27 +24,27 @@
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
       </div>
-      <script src="./javaScript/index.js"></script>
+      <script src="/javaScript/producto.js"></script>
   </header> 
 
 </body>
 <main class="product-page">
     <article class="product-details">
       <img src="../imagenes/bebidavegana.webp" alt="Bebida Refrescante">
-      <h2>Bebida Refrescante</h2>
-      <p>Una bebida refrescante y natural para acompañar tu comida vegana.</p>
+      <h2 id="txt_BebidaRefrescanteProducto">Bebida Refrescante</h2>
+      <p id="txt_BebidaRefrescanteProductoDesc">Una bebida refrescante y natural para acompañar tu comida vegana.</p>
       <p class="price">$3.99</p>
     </article>
 
     <section class="options">
-      <h3>Opciones:</h3>
+      <h3 id="txt_opciones">Opciones:</h3>
       <label>
         <input type="radio" name="salsa" value="con_hielo">
-        Con Hielo
+        <a id="txt_conHielo"> Hielo </a>
       </label>
       <label>
         <input type="radio" name="salsa" value="sin_hielo">
-        Sin Hielo
+        <a id="txt_sinHielo">Hielo </a>
       </label>
     </section>
 

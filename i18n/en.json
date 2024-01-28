@@ -52,6 +52,23 @@
   "txt_pastelChoco": "Chocolate Cake",
   "txt_pastelChocoDesc": "A decadent and delicious vegan chocolate cake.",
   "txt_ofertaEspecial": "Special Offer!",
-  "txt_ofertaEspecialDesc": "Buy two snacks and get the third one for free."
+  "txt_ofertaEspecialDesc": "Buy two snacks and get the third one for free.",
+
+  "txt_tuPedido": "Your Order",
+  "txt_bebidaRefrescantePedido": "Refreshing Drink",
+  "txt_snackSaludable": "Healthy Snack",
+  "txt_ensaladaFrescaPedido": "Fresh Salad",
+  "txt_sopaNutritiva": "Nutritious Soup",
+  "txt_batidoEnergizante": "Energizing Smoothie",
+  "txt_platoVeganoVariado": "Assorted Vegan Dish",
+  "txt_total": "Total:",
+  "payButton": "Pay",
+
+  "txt_BebidaRefrescanteProducto": "Refreshing Drink",
+  "txt_BebidaRefrescanteProductoDesc": "A refreshing and natural beverage to accompany your vegan meal.",
+  "txt_opciones": "Options",
+  "txt_conHielo": "With Ice",
+  "txt_sinHielo": "Without Ice",
+  "addToCart": "Add to Cart"
   
 }

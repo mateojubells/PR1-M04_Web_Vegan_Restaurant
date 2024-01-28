@@ -51,7 +51,22 @@
   "txt_pastelChoco": "Pastís de Xocolata",
   "txt_pastelChocoDesc": "Un pastís de xocolata vegà decadent i deliciós.",
   "txt_ofertaEspecial": "¡Oferta Especial!",
-  "txt_ofertaEspecialDesc": "Compra dues aperitius i obtén la tercera gratis."
+  "txt_ofertaEspecialDesc": "Compra dues aperitius i obtén la tercera gratis.",
 
-
+  "txt_tuPedido": "La Teva Comanda",
+  "txt_bebidaRefrescantePedido": "Beguda Refrescant",
+  "txt_snackSaludable": "Snack Saludable",
+  "txt_ensaladaFrescaPedido": "Amanida Fresca",
+  "txt_sopaNutritiva": "Sopa Nutritiva",
+  "txt_batidoEnergizante": "Batut Energètic",
+  "txt_platoVeganoVariado": "Plat Variat Vegà",
+  "txt_total": "Total:",
+  "payButton": "Pagar",
+  
+  "txt_BebidaRefrescanteProducto": "Beguda Refrescant",
+  "txt_BebidaRefrescanteProductoDesc": "Una beguda refrescant i natural per acompanyar el teu àpat vegà.",
+  "txt_opciones": "Opcions",
+  "txt_conHielo": "Amb Gel",
+  "txt_sinHielo": "Sense Gel",
+  "addToCart": "Afegir al Carret"
 }

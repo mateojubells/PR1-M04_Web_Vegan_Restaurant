@@ -1,8 +1,7 @@
 // Obtener el idioma de la URL si existe y ejecutar la función "changeLanguage"
-const querystring = window.location.search; // Si la url es: https://miweb.es?lang=es, retorna ?lang=es
+const querystring = window.location.search; // Si la URL es: https://miweb.es?lang=es, retorna ?lang=es
 const urlParams = new URLSearchParams(querystring);
-
-if (urlParams.get('lang')) {
+if (urlParams.get('lang')){
   const lang = urlParams.get('lang');
   changeLanguage(lang);
 }
@@ -12,30 +11,25 @@ async function changeLanguage(lang) {
   const newURL = window.location.protocol + '//' + window.location.host + window.location.pathname + '?lang=' + lang;
   window.history.replaceState({}, '', newURL);
 
-  // Obtener el archivo JSON correspondiente
+  // Obtener el archivo json correspondiente
   const response = await fetch(`../i18n/${lang}.json`);
   const data = await response.json();
 
   // Cambiar los textos
-  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios;
-  document.getElementById('txt_header_nosotros').innerHTML = data.txt_header_nosotros;
-  document.getElementById('txt_header_experiencias').innerHTML = data.txt_header_experiencias;
-  document.getElementById('txt_header_contactanos').innerHTML = data.txt_header_contactanos;
+  document.getElementById('txt_header_menu').innerHTML = data.txt_header_menu;
+  document.getElementById('txt_header_productoEspecial').innerHTML = data.txt_header_productoEspecial;
+  document.getElementById('txt_header_pedido').innerHTML = data.txt_header_pedido;
 
-  document.getElementById('txt_section1').innerHTML = data.txt_section1;
-  document.getElementById('txt_section2').innerHTML = data.txt_section2;
+  document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
+  document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
+  document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
+  document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
 
-  // Servicios
-  document.getElementById('txt_boda').innerHTML = data.txt_boda;
-  document.getElementById('descripcion_boda').innerHTML = data.descripcion_boda;
-  document.getElementById('txt_convencion').innerHTML = data.txt_convencion;
-  document.getElementById('descripcion_convencion').innerHTML = data.descripcion_convencion;
-
-  document.getElementById('txt_ver_mas').innerHTML = data.txt_ver_mas;
-
-  // Footer
-  document.getElementById('txt_serviciosFooter').innerHTML = data.txt_serviciosFooter;
-  document.getElementById('txt_sobreNosotrosFooter').innerHTML = data.txt_sobreNosotrosFooter;
-  document.getElementById('txt_experienciasFooter').innerHTML = data.txt_experienciasFooter;
-  document.getElementById('txt_contactanosFooter').innerHTML = data.txt_contactanosFooter;
+  // Nuevos cambios
+  document.getElementById('txt_BebidaRefrescanteProducto').innerHTML = data.txt_BebidaRefrescanteProducto;
+  document.getElementById('txt_BebidaRefrescanteProductoDesc').innerHTML = data.txt_BebidaRefrescanteProductoDesc;
+  document.getElementById('txt_opciones').innerHTML = data.txt_opciones;
+  document.getElementById('txt_conHielo').innerHTML = data.txt_conHielo;
+  document.getElementById('txt_sinHielo').innerHTML = data.txt_sinHielo;
+  document.getElementById('addToCart').innerHTML = data.addToCart;
 }

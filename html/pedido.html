@@ -24,47 +24,47 @@
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
       </div>
-      <script src="./javaScript/index.js"></script>
+      <script src="/javaScript/pedido.js"></script>
   </header> 
 <main class="order-page">
     <section class="order-details">
-      <h2>Tu Pedido</h2>
+      <h2 id="txt_tuPedido">Tu Pedido</h2>
        <ul>
       <li>
-        <span class="product-name">Bebida Refrescante</span>
+        <span class="product-name" id="txt_bebidaRefrescantePedido">Bebida Refrescante</span>
         <span class="quantity">x1</span>
         <span class="price">$3.99</span>
       </li>
       <li>
-        <span class="product-name">Snack Saludable</span>
+        <span class="product-name" id="txt_snackSaludable">Snack Saludable</span>
         <span class="quantity">x2</span>
         <span class="price">$2.99 c/u</span>
       </li>
       <li>
-        <span class="product-name">Ensalada Fresca</span>
+        <span class="product-name" id="txt_ensaladaFrescaPedido">Ensalada Fresca</span>
         <span class="quantity">x1</span>
         <span class="price">$5.99</span>
       </li>
       <!-- Nuevos productos agregados -->
       <li>
-        <span class="product-name">Sopa Nutritiva</span>
+        <span class="product-name" id="txt_sopaNutritiva">Sopa Nutritiva</span>
         <span class="quantity">x1</span>
         <span class="price">$4.99</span>
       </li>
       <li>
-        <span class="product-name">Batido Energizante</span>
+        <span class="product-name" id="txt_batidoEnergizante">Batido Energizante</span>
         <span class="quantity">x2</span>
         <span class="price">$3.49 c/u</span>
       </li>
       <li>
-        <span class="product-name">Plato Vegano Variado</span>
+        <span class="product-name" id="txt_platoVeganoVariado">Plato Vegano Variado</span>
         <span class="quantity">x1</span>
         <span class="price">$8.99</span>
       </li>
     </ul>
 
     <div class="total">
-      <span>Total:</span>
+      <span id="txt_total">Total:</span>
       <span class="total-price">$29.43</span>
     </div>
 
