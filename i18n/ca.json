@@ -68,5 +68,13 @@
   "txt_opciones": "Opcions",
   "txt_conHielo": "Amb Gel",
   "txt_sinHielo": "Sense Gel",
-  "addToCart": "Afegir al Carret"
+  "addToCart": "Afegir al Carret",
+
+  "txt_section1": "RESTAURANT 100% VEGÀ",
+  "txt_section2": "Descobreix els nostres serveis",
+  "txt_comerAquiIndex": "MENJAR AL LOCAL",
+  "txt_descripcioComerAqui": "Descobreix el plaer en cada mos del nostre racó vegà",
+  "txt_takeAwayIndex": "TAKE AWAY",
+  "txt_disfrutaCasa": "Gaudeix de la mateixa comida a casa",
+  "txt_verMas": "VEURE MÉS"
 }

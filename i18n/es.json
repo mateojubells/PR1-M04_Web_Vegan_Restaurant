@@ -67,5 +67,13 @@
   "txt_opciones": "Opciones",
   "txt_conHielo": "Con hielo",
   "txt_sinHielo": "Sin hielo",
-  "addToCart": "Añadir al Pedido"
+  "addToCart": "Añadir al Pedido",
+
+  "txt_section1": "RESTAURANTE 100% VEGANO",
+  "txt_section2": "Descubre nuestos servicios",
+  "txt_comerAquiIndex": "COMER AQUI",
+  "txt_descripcioComerAqui": "Descubre el placer en cada bocado de nuestro rincón vegano",
+  "txt_takeAwayIndex": "TAKE AWAY",
+  "txt_disfrutaCasa": "Disfruta de la misma comida en casa",
+  "txt_verMas": "VER MÁS"
 }
