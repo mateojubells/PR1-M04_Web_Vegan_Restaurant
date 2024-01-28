@@ -1,9 +1,13 @@
 {
-  "txt_servicios_FOHE": "Servicios",
+  "txt_header_servicios": "Servicios",
   "txt_header_compras": "Compras",
-  "txt_sobreNosotros": "Sobre Nosotros",
-  "txt_reserva": "Reserva",
-  "txt_Pedido": "Pedido",
+  "txt_header_sobreNosotros": "Sobre Nosotros",
+  "txt_header_reserva": "Reserva",
+
+  "txt_footer_servicios": "Servicios",
+  "txt_footer_sobreNosotros": "Sobre Nosotros",
+  "txt_footer_Pedido": "Pedido",
+  "txt_footer_reserva": "Reserva",
 
 
   "txt_titoloForm": "Contacte con nostoros rellenando este formulario",
@@ -13,6 +17,11 @@
   "txt_email": "Email",
   "txt_diaDeReserva": "Dia de la reserva",
   "txt_numPersonas": "Numero de persones",
-  "txt_masInfo": "Para reservas de mas de 6 personas, llamar al 653201489"
+  "txt_masInfo": "Para reservas de mas de 6 personas, llamar al 653201489",
+
+  "txt_nuestraHistoria": "Nuestra Historia",
+  "txt_textIntroduccio": "¡Bienvenido a nuestro restaurante vegano! Sumérgete en una experiencia culinaria excepcional, donde la pasión por la comida sana y deliciosa se entrelaza con una narrativa única y cautivadora. Desde el inicio de nuestro viaje, nuestro anhelo ha sido compartir la alegría y los beneficios de una dieta basada en plantas. Cada bocado delicioso que ofrecemos no solo deleita el paladar, sino que también representa un compromiso con transformar vidas mediante opciones alimenticias saludables y sostenibles. Descubre la magia de nuestra propuesta gastronómica, donde cada platillo es una obra maestra creada con ingredientes frescos y conscientemente seleccionados. ¡Te invitamos a unirte a nosotros en este emocionante viaje hacia una vida más saludable y deliciosa!",
+  "txt_nuestraFilosofia": "Nuestra Filosofía",
+  "txt_textIntroduccio2": "En el corazón de nuestro restaurante se encuentra una filosofía arraigada en el respeto por la vida y el planeta. Creemos que cada elección cuenta, y es por eso que nos esforzamos por ofrecer opciones sabrosas que nutren tanto el cuerpo como el alma. Únete a nosotros en este viaje hacia un estilo de vida más saludable y sostenible."
 
 }

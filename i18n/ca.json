@@ -1,10 +1,14 @@
 {
-  "txt_servicios_FOHE": "Serveis",
+  "txt_header_servicios": "Serveis",
   "txt_header_compras": "Compres",
-  "txt_sobreNosotros": "Sobre Nosaltres",
-  "txt_reserva": "Reserva",
-  "txt_Pedido": "Comanda",
+  "txt_header_sobreNosotros": "Sobre Nosaltres",
+  "txt_header_reserva": "Reserva",
 
+  "txt_footer_servicios": "Serveis",
+  "txt_footer_sobreNosotros": "Sobre Nosaltres",
+  "txt_footer_Pedido": "Comanda",
+  "txt_footer_reserva": "Reserva",
+  
 
   "txt_titoloForm": "Posa't en contacte amb nosaltres omplint aquest formulari",
   "txt_contacta_con_nosotros": "Posa't en contacte amb nosaltres a través d'aquest formulari i t'enviarem la confirmació de la reserva.",
@@ -13,7 +17,11 @@
   "txt_email": "Email",
   "txt_diaDeReserva": "Dia de la reserva",
   "txt_numPersonas": "Número de persones",
-  "txt_masInfo": "Per a reserves de més de 6 persones, truqueu al 653201489"
+  "txt_masInfo": "Per a reserves de més de 6 persones, truqueu al 653201489",
 
+  "txt_nuestraHistoria": "La nostra Història",
+  "txt_textIntroduccio": "Benvingut al nostre restaurant vegà! Submergeix-te en una experiència culinària excepcional, on la passió per la comida saludable i deliciosa s'entrellaça amb una narrativa única i captivadora. Des de l'inici del nostre viatge, el nostre anhel ha estat compartir la joia i els beneficis d'una dieta basada en plantes. Cada mos deliciosa que oferim no només delitja el paladar, sinó que també representa un compromís amb transformar vides mitjançant opcions alimentàries saludables i sostenibles. Descobreix la màgia de la nostra proposta gastronòmica, on cada plat és una obra mestra creada amb ingredients frescos i conscientment seleccionats. Et convidem a unir-te a nosaltres en aquest emocionant viatge cap a una vida més saludable i deliciosa!",
+  "txt_nuestraFilosofia": "La nostra Filosofia",
+  "txt_textIntroduccio2": "Al cor del nostre restaurant hi ha una filosofia arrelada en el respecte per la vida i el planeta. Creiem que cada elecció compta, i és per això que ens esforcem per oferir opcions saboroses que nodreixen tant el cos com l'ànima. Uneix-te a nosaltres en aquest viatge cap a un estil de vida més saludable i sostenible."
 
 }

@@ -17,11 +17,16 @@ async function changeLanguage(lang) {
 
   // Canviar els texts (Aquesta és la part que heu de modificar)
 
-  document.getElementById('txt_servicios_FOHE').innerHTML = data.txt_servicios_FOHE;
+
+  document.getElementById('txt_header_servicios').innerHTML = data.txt_header_servicios;
   document.getElementById('txt_header_compras').innerHTML = data.txt_header_compras;
-  document.getElementById('txt_sobreNosotros').innerHTML = data.txt_sobreNosotros;
-  document.getElementById('txt_reserva').innerHTML = data.txt_reserva;
-  document.getElementById('txt_Pedido').innerHTML = data.txt_Pedido;
+  document.getElementById('txt_header_sobreNosotros').innerHTML = data.txt_header_sobreNosotros;
+  document.getElementById('txt_header_reserva').innerHTML = data.txt_header_reserva;
+  document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
+  document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
+  document.getElementById('txt_footer_sobreNosotros').innerHTML = data.txt_footer_sobreNosotros;
+  document.getElementById('txt_footer_reserva').innerHTML = data.txt_footer_reserva;
+  
 
   document.getElementById('txt_titoloForm').innerHTML = data.txt_titoloForm;
   document.getElementById('txt_contacta_con_nosotros').innerHTML = data.txt_contacta_con_nosotros;

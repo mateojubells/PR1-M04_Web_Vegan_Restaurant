@@ -1,9 +1,14 @@
 {
-  "txt_servicios_FOHE": "Services",
+  
+  "txt_header_servicios": "Services",
   "txt_header_compras": "Shopping",
-  "txt_sobreNosotros": "About Us",
-  "txt_reserva": "Reservation",
-  "txt_Pedido": "Order",
+  "txt_header_sobreNosotros": "About Us",
+  "txt_header_reserva": "Reservation",
+
+  "txt_footer_servicios": "Services",
+  "txt_footer_sobreNosotros": "About Us",
+  "txt_footer_Pedido": "Order",
+  "txt_footer_reserva": "Reservation",
 
 
   "txt_titoloForm": "Contact us by filling out this form",
@@ -13,6 +18,11 @@
   "txt_email": "Email",
   "txt_diaDeReserva": "Reservation Date",
   "txt_numPersonas": "Number of People",
-  "txt_masInfo": "For reservations of more than 6 people, call 653201489"
+  "txt_masInfo": "For reservations of more than 6 people, call 653201489",
+
+  "txt_nuestraHistoria": "Our Story",
+  "txt_textIntroduccio": "Welcome to our vegan restaurant! Immerse yourself in an exceptional culinary experience where the passion for healthy and delicious food intertwines with a unique and captivating narrative. From the beginning of our journey, our longing has been to share the joy and benefits of a plant-based diet. Every delightful bite we offer not only pleases the palate but also represents a commitment to transforming lives through healthy and sustainable food choices. Discover the magic of our gastronomic proposal, where each dish is a masterpiece created with fresh and consciously selected ingredients. We invite you to join us on this exciting journey towards a healthier and more delicious life!",
+  "txt_nuestraFilosofia": "Our Philosophy",
+  "txt_textIntroduccio2": "At the heart of our restaurant lies a philosophy rooted in respect for life and the planet. We believe that every choice matters, and that's why we strive to offer tasty choices that nourish both the body and soul. Join us on this journey towards a healthier and more sustainable lifestyle."
 
 }
