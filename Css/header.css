@@ -22,9 +22,12 @@ button{
 margin:20px;
 justify-content: center;
 text-decoration: none;
-color: white;
 text-align: center;
 }
+header .items{
+    color: white;
+}
+
 .sub-item:hover{
 transform: scale(1.2);
 }
