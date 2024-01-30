@@ -73,6 +73,9 @@ h1 {
 
 @media (max-width: 480px) {
   /* Telefono */
+  main {
+    width: 100%;
+  }
 
   .grid-layout {
     grid-template-areas:
@@ -80,13 +83,28 @@ h1 {
       "menu"
       "takeaway";
   }
+
   .card-container {
     display: flex;
-    width: 260px;
+    width: 200px;
     height: 325px;
-  padding: 10px;  }
-  
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .prueba {
+    width: 100%;
+    box-sizing: border-box; /* Añadido el modelo de caja border-box */
+  }
+
+  #menu,
+  #title-section {
+    max-width: 100%;
+    box-sizing: border-box; /* Añadido el modelo de caja border-box */
+  }
 }
+
+
 
 @media (min-width: 480px), (max-width: 1185px) {
   /* Tablet */
@@ -96,6 +114,7 @@ h1 {
       "menu"
       "takeaway";
   }
+  
   .card-container {
     display: flex;
     width: 400px;
