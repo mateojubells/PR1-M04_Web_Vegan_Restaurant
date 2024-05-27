@@ -1,158 +1,261 @@
-main{
-background-color:rgb(231,231,231);
+/* General Styles */
+main {
+  background-color: rgb(231,231,231);
 }
 
-.section1{
-height: 630px;
-position: relative;
-background-image: url(/imagenes/ComidaVegana.avif);
+.section1 {
+  height: 630px;
+  position: relative;
+  background-image: url(/imagenes/ComidaVegana.avif);
+  background-size: cover; /* Add this line */
+  background-position: center; /* Add this line */
 }
 
 .section1::after {
-content:'';
-position: absolute;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-background: linear-gradient(270deg, rgba(55,121,95,1) 55%, rgba(255,255,255,0) 100%);
+  content:'';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(270deg, rgba(55,121,95,1) 55%, rgba(255,255,255,0) 100%);
 }
 
-.textop{
-font-size: 40px;
-color: white;
-text-align: center;
-padding: 5px;
+.textop {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
-.fondotextop{
-width: 600px;
-height: 150px;
-background-color: rgba(255, 255, 255, 0.302);
-border-radius: 20px;
-position: absolute;
-top: 50%;
-left: 70%;
-transform: translate(-50%, -50%);
-display: flex;
-align-items: center;
-z-index: 10
+.fondotextop {
+  width: 600px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.302);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  z-index: 10;
 }
-.titulo-section2{
-text-align: center;
-margin-top: 40px;
-font-size:22px;
+
+.titulo-section2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size:22px;
 }
-.imgIndex{
-width: 950px;
+
+.imgIndex {
+  width: 950px;
 }
 
 /* Servicios */
-
 .grid-layout {
-display: grid;
-grid-gap: 1rem;
-grid-template-areas:
-"comerAqui takeAway"
-"more more";
-justify-content: space-around;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "comerAqui takeAway"
+    "more more";
+  justify-content: space-around;
 }
+
 .card-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 500px;
-height: 325px;
-border: 2px solid #ccc;
-border-radius: 5px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-margin: 2rem 5rem 2rem 5rem;
-margin-top: 60px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 325px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2rem 5rem 2rem 5rem;
+  margin-top: 60px;
 }
 
 .card-container:hover {
-box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
 .card-container img {
-width: 100%;
-height: 200px;
-object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-container .text {
-padding: 5px 20px 50px 20px;
-font-size: 16px;
+  padding: 5px 20px 50px 20px;
+  font-size: 16px;
 }
 
 .card-container h3 {
-padding: 5px;
-font-size: 30px;
-margin-bottom: 5px;
+  padding: 5px;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 
-.b-see-more{
-width: 100%;
-background-color: rgb(55,121,95);
-border: none;
-padding: 15px 32px;
-text-align: center;
-color: white;
-box-shadow: 5px;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-box-sizing: border-box;
+.b-see-more {
+  width: 100%;
+  background-color: rgb(55,121,95);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  color: white;
+  box-shadow: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-
-#b-see-more:hover{
-cursor: pointer;
-box-shadow: 8px;
-background-color: rgb(44, 97, 61);
+.b-see-more:hover {
+  cursor: pointer;
+  box-shadow: 8px;
+  background-color: rgb(44, 97, 61);
 }
 
 #comerAqui {grid-area: comerAqui;}
-#takeAway {grid-area: takeAway
-;}
+#takeAway {grid-area: takeAway;}
 #b-see-more {grid-area: more;}
 
-/* MOVIL */
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+  display: none;
+}
 
-#comerAqui {
-grid-area: comerAqui;
+.menu-icon {
+  cursor: pointer;
+  display: block;
+  padding: 20px;
+  background: none;
+  border: none;
 }
-#takeAway {
-grid-area: takeAway;
+
+.nav-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  position: relative;
+  transition: background-color 0.5s ease;
 }
-@media (max-width:480px){
-main{
-display:inline-block;
-height: 1550px;
-width: 100%;
+
+.nav-icon:before,
+.nav-icon:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  position: absolute;
+  transition: transform 0.5s ease;
 }
-body{
-margin: 0px;
+
+.nav-icon:before {
+  top: -8px;
 }
-.section2{
-display: inline;
+
+.nav-icon:after {
+  top: 8px;
 }
-.textop{
-font-size: 20px;
+
+/* Estilos para el nuevo apartado */
+.nuevo-apartado {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
 }
-.fondotextop{
-width: 50%;
+
+.contenido-nuevo-apartado {
+  max-width: 800px;
+  margin: 0 auto;
 }
-.card-container{
-width: 280px;
+
+.titulo_nuevo_apartado {
+  font-size: 32px;
+  color: #333;
 }
-.grid-layout{
-grid-template-areas:
-'comerAqui'
-'takeAway'
-;
+
+.descripcion_nuevo_apartado {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 20px;
 }
-.imgIndex{
-    background-position: left center;
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 1100px) {
+  .card-container {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0;
+  }
+
+  .contenido-nuevo-apartado {
+    padding: 0 10px;
+  }
+
+  .titulo_nuevo_apartado {
+    font-size: 24px;
+  }
+
+  .descripcion_nuevo_apartado {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .fondotextop {
+    width: 90%;
+    height: auto;
+  }
+
+  .grid-layout {
+    grid-template-areas:
+      "comerAqui"
+      "takeAway"
+      "more";
+  }
 }
+
+@media (max-width: 480px) {
+  .textop {
+    font-size: 20px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .fondotextop {
+    width: 90%;
+    height: auto;
+  }
+
+  .contenido-nuevo-apartado {
+    padding: 0 10px;
+  }
+
+  .titulo-nuevo-apartado {
+    font-size: 24px;
+  }
+
+  .descripcion-nuevo-apartado {
+    font-size: 14px;
+  }
+
+  .card-container {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .grid-layout {
+    grid-template-areas:
+      "comerAqui"
+      "takeAway"
+      "more";
+  }
 }

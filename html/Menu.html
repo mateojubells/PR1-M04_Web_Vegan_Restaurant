@@ -13,10 +13,10 @@
 <body>
   <header>
     <nav class="grid-container-2">
-      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.png" alt=""></a>
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
       <a href="/html/Menu.html" class="items sub-item" id="txt_header_menu">Menu</a>
       <a href="/html/Producto.html" class="items sub-item" id="txt_header_productoEspecial">Producto Especial</a>
-      <a href="/html/pedido.html" class="contact" id="txt_header_pedido">Pedido</a>
+      <a href="pedido.html" class="contact" id="txt_header_pedido">Pedido</a>
      </nav>
       <div class="botonesidioma">
         <button onclick="changeLanguage('ca')">Cat</button>
@@ -36,6 +36,12 @@
       <h2 class="items sub-item" id="txt_bebidaRefrescante">Bebida Refrescante</h2>
       <p class="items sub-item" id="txt_bebidaRefrescanteDesc">Una bebida refrescante y natural para acompañar tu comida vegana.</p>
       <p class="price">$3.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">1</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd1" >Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -43,12 +49,25 @@
       <h2 class="items sub-item" id="txt_puddingChia">Pudding de chia</h2>
       <p class="items sub-item" id="txt_puddingChiaDesc">Un snack delicioso y saludable para satisfacer tus antojos.</p>
       <p class="price">$2.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">4</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd2" >Añadir al Pedido</a>
     </article>
+
     <article class="product">
       <img src="../imagenes/hamburguesa.webp" alt="Hamburguesa Vegana">
       <h2 class="items sub-item" id="txt_hamburguesaVegana">Hamburguesa Vegana</h2>
       <p class="items sub-item" id="txt_hamburguesaVeganaDesc">Una deliciosa hamburguesa vegana con ingredientes frescos y sabrosos.</p>
       <p class="price">$7.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">2</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd3">Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -56,6 +75,12 @@
       <h2 class="items sub-item" id="txt_ensaladaFresca">Ensalada Fresca</h2>
       <p class="items sub-item" id="txt_ensaladaFrescaDesc">Una ensalada fresca con una variedad de vegetales y aderezo vegano.</p>
       <p class="price">$5.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">0</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd4">Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -63,6 +88,12 @@
       <h2 class="items sub-item" id="txt_smoothie">Smoothie Energizante</h2>
       <p class="items sub-item" id="txt_smoothieDesc">Un smoothie lleno de energía con frutas frescas y leche vegetal.</p>
       <p class="price">$4.49</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">1</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd5">Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -70,6 +101,12 @@
       <h2 class="items sub-item" id="txt_pizza">Pizza Vegana</h2>
       <p class="items sub-item" id="txt_pizzaDesc">Una pizza vegana con una base crujiente y toppings deliciosos.</p>
       <p class="price">$9.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">0</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd6">Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -77,6 +114,12 @@
       <h2 class="items sub-item" id="txt_tacos">Tacos Veganos</h2>
       <p class="items sub-item" id="txt_tacosDesc">Tacos rellenos de ingredientes veganos frescos y sabrosos.</p>
       <p class="price">$6.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">0</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd7">Añadir al Pedido</a>
     </article>
 
     <article class="product">
@@ -84,6 +127,12 @@
       <h2 class="items sub-item" id="txt_pastelChoco">Pastel de Chocolate</h2>
       <p class="items sub-item" id="txt_pastelChocoDesc">Un pastel de chocolate vegano decadente y delicioso.</p>
       <p class="price">$8.99</p>
+      <div class="quantity-selector">
+        <button class="decrement-btn">-</button>
+        <span class="quantity">2</span>
+        <button class="increment-btn">+</button>
+      </div>
+      <a href="pedido.html" class="product-button" id="txt_BtnAdd8">Añadir al Pedido</a>
     </article>
   </section>
 
@@ -93,6 +142,7 @@
       <h2 class="items sub-item" id="txt_ofertaEspecial">¡Oferta Especial!</h2>
       <p class="items sub-item" id="txt_ofertaEspecialDesc">Compra dos snacks y obtén el tercero gratis.</p>
     </div>
+  
   </div>
 
 
@@ -101,14 +151,14 @@
 
 <footer class="footer">
   <ul class="lastcolumnfooter">
-    <li><img src="../imagenes/logopractica1.png" alt="" class="imagenfooter"></li>
+    <li><img src="../imagenes/logopractica1.svg" alt="" class="imagenfooter"></li>
   </ul>
   <ul class="secondfooter">
     <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a> </li>
       <span class="span"></span>
       <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_footer_sobreNosotros">Sobre Nosotros</a></li>
       <span class="span"></span>
-      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_footer_Pedido">Pedido</a></li>
+      <li><a class="itemsfooter" href="pedido.html.html" id="txt_footer_Pedido">Pedido</a></li>
     </ul>
     <ul class="lastcolumnfooter">
       <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>

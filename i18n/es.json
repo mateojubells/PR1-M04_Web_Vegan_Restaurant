@@ -35,6 +35,14 @@
 
   "txt_bebidaRefrescante": "Bebida Refrescante",
   "txt_bebidaRefrescanteDesc": "Una bebida refrescante y natural para acompañar tu comida vegana.",
+  "txt_BtnAdd1": "Añadir al pedido",
+  "txt_BtnAdd2": "Añadir al pedido",
+  "txt_BtnAdd3": "Añadir al pedido",
+  "txt_BtnAdd4": "Añadir al pedido",
+  "txt_BtnAdd5": "Añadir al pedido",
+  "txt_BtnAdd6": "Añadir al pedido",
+  "txt_BtnAdd7": "Añadir al pedido",
+  "txt_BtnAdd8": "Añadir al pedido",
   "txt_puddingChia": "Pudding de chia",
   "txt_puddingChiaDesc": "Un snack delicioso y saludable para satisfacer tus antojos.",
   "txt_hamburguesaVegana": "Hamburguesa Vegana",
@@ -75,5 +83,8 @@
   "txt_descripcioComerAqui": "Descubre el placer en cada bocado de nuestro rincón vegano",
   "txt_takeAwayIndex": "TAKE AWAY",
   "txt_disfrutaCasa": "Disfruta de la misma comida en casa",
-  "txt_verMas": "VER MÁS"
+  "txt_verMas": "VER MÁS",
+
+  "txt_titulo_nuevo_apartado": "Descubre nuestra filosofía",
+  "txt_titulo_nuevo_apartadotxt_titulo_nuevo_apartadotxt_titulo_nuevo_apartadotxt_titulo_nuevo_apartado": "En nuestro restaurante vegano, nos esforzamos por crear una experiencia culinaria sostenible y deliciosa para todos nuestros clientes. Cada plato que servimos está cuidadosamente elaborado con ingredientes frescos y de origen local, respetando el medio ambiente y apoyando a los agricultores locales. Queremos que cada bocado sea una celebración de la comida vegana, una experiencia que te conecte con la naturaleza y te haga sentir bien contigo mismo.¡Únete a nosotros en esta aventura culinaria y descubre un mundo de sabores, ética y sostenibilidad!"
 }

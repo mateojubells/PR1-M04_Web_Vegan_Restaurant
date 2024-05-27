@@ -155,6 +155,9 @@ form{
 .btn{
   width: 100px;
 }
+.footer {
+  display: none;
+}
 
 }
 

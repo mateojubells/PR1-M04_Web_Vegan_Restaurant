@@ -29,4 +29,7 @@ async function changeLanguage(lang) {
   document.getElementById('txt_takeAwayIndex').innerHTML = data.txt_takeAwayIndex;
   document.getElementById('txt_disfrutaCasa').innerHTML = data.txt_disfrutaCasa;
   document.getElementById('txt_verMas').innerHTML = data.txt_verMas;
+
+  document.getElementById('txt_titulo_nuevo_apartado').innerHTML = data.txt_titulo_nuevo_apartado;
+  document.getElementById('txt_descripcion_nuevo_apartado').innerHTML = data.txt_descripcion_nuevo_apartado;
 }

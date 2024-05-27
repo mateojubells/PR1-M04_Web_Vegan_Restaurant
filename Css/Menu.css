@@ -5,8 +5,6 @@ body {
   background-color: #37795f;
 }
 
-
-
 header {
   background-color: #37795f;
   text-align: center;
@@ -73,3 +71,54 @@ h2 {
 .close:hover {
   color: #ccc;
 }
+
+/* Estilos para los botones de los productos */
+.product-button {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #37795f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  text-align: center;
+}
+
+.product-button:hover {
+  background-color: #295e48;
+}
+
+/* Estilos para el contador de cantidad */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quantity-selector .decrement-btn,
+.quantity-selector .increment-btn {
+  background-color: #37795f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-selector .quantity {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+  
+@media (max-width: 480px) {
+
+  .footer {
+      display: none; /* Ocultar el footer en dispositivos móviles */
+    }
+  }

@@ -3,7 +3,7 @@
   grid-gap: 1rem;
   grid-template-areas:
     "title title"
-    "menu takeaway" ;
+    "menu takeaway";
 }
 
 main {
@@ -12,11 +12,12 @@ main {
   align-items: center;
   margin-bottom: 50px;
 }
-#txt_servicios{
+
+#txt_servicios {
   padding: 25px;
-  color: rgb(208,255,171);
-  font-family:Georgia, 'Times New Roman', Times, serif ;
-  font-style: italic; 
+  color: rgb(208, 255, 171);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .card-container {
@@ -29,10 +30,13 @@ main {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 10px 6px -6px rgb(40, 40, 40);
-  padding: 20px;  background-color: white;
+  padding: 20px;
+  background-color: white;
   transition: box-shadow 0.5s 0s ease-in-out;
-  margin-left:60px ;
-  margin-right:60px ;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: black;
 }
 
 .card-container:hover {
@@ -63,6 +67,7 @@ h1 {
 #menu {
   grid-area: menu;
 }
+
 #takeaway {
   grid-area: takeaway;
 }
@@ -85,28 +90,25 @@ h1 {
   }
 
   .card-container {
-    display: flex;
-    width: 200px;
-    height: 325px;
-    padding: 10px;
+    align-items: center;
+    width: 94%; /* Cambiar el ancho al 100% para que se ajuste al tamaño del dispositivo */
     max-width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .prueba {
     width: 100%;
     box-sizing: border-box; /* Añadido el modelo de caja border-box */
   }
-
-  #menu,
-  #title-section {
-    max-width: 100%;
-    box-sizing: border-box; /* Añadido el modelo de caja border-box */
+  .footer {
+    display: none; 
   }
+
 }
 
-
-
-@media (min-width: 480px), (max-width: 1185px) {
+@media (min-width: 480px) and (max-width: 1185px) {
   /* Tablet */
   .grid-layout {
     grid-template-areas:
@@ -118,8 +120,10 @@ h1 {
   .card-container {
     display: flex;
     width: 400px;
+    max-width: 100%; /* Ajuste para evitar desbordamiento */
     height: 325px;
-padding: 10px;  }
+    padding: 10px;
+  }
 }
 
 @media (min-width: 1185px){
@@ -134,5 +138,7 @@ padding: 10px;  }
 
   .card-container {
     width: 500px;
-    padding: 10px;  }
+    max-width: 100%; /* Ajuste para evitar desbordamiento */
+    padding: 10px;
+  }
 }

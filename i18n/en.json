@@ -37,6 +37,15 @@
 
   "txt_bebidaRefrescante": "Refreshing Drink",
   "txt_bebidaRefrescanteDesc": "A refreshing and natural beverage to accompany your vegan meal.",
+  "txt_BtnAdd1": "Add to cart",
+  "txt_BtnAdd2": "Add to cart",
+  "txt_BtnAdd3": "Add to cart",
+  "txt_BtnAdd4": "Add to cart",
+  "txt_BtnAdd5": "Add to cart",
+  "txt_BtnAdd6": "Add to cart",
+  "txt_BtnAdd7": "Add to cart",
+  "txt_BtnAdd8": "Add to cart",
+  
   "txt_puddingChia": "Chia Pudding",
   "txt_puddingChiaDesc": "A delicious and healthy snack to satisfy your cravings.",
   "txt_hamburguesaVegana": "Vegan Burger",
@@ -77,5 +86,8 @@
   "txt_descripcioComerAqui": "Discover delight in every bite at our vegan haven",
   "txt_takeAwayIndex": "TAKE AWAY",
   "txt_disfrutaCasa": "Enjoy the same food at home",
-  "txt_verMas": "SEE MORE"
+  "txt_verMas": "SEE MORE",
+
+  "txt_titulo_nuevo_apartado": "Discover our philosophy",
+  "txt_descripcion_nuevo_apartado": "At our vegan restaurant, we strive to create a sustainable and delicious dining experience for all our customers. Every dish we serve is carefully made with fresh, locally sourced ingredients, respecting the environment and supporting local farmers. We want every bite to be a celebration of vegan food, an experience that connects you with nature and makes you feel good about yourself. Join us on this culinary adventure and discover a world of flavors, ethics and sustainability!"
 }

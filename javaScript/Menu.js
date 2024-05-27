@@ -1,9 +1,11 @@
-const querystring = window.location.search; 
-const urlParams = new URLSearchParams(querystring);
-if (urlParams.get('lang')){
-  const lang = urlParams.get('lang');
-  changeLanguage(lang);
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const querystring = window.location.search; 
+  const urlParams = new URLSearchParams(querystring);
+  if (urlParams.get('lang')) {
+    const lang = urlParams.get('lang');
+    changeLanguage(lang);
+  }
+});
 
 async function changeLanguage(lang) {
   // Guardar el idioma en la URL
@@ -12,6 +14,11 @@ async function changeLanguage(lang) {
 
   const response = await fetch(`../i18n/${lang}.json`);
   const data = await response.json();
+
+  const buttons = document.getElementsByClassName('product-button');
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].innerHTML = data['txt_BtnAdd' + (i + 1)];
+  }
 
 
   document.getElementById('txt_header_menu').innerHTML = data.txt_header_menu;
@@ -42,4 +49,13 @@ async function changeLanguage(lang) {
   document.getElementById('txt_pastelChocoDesc').innerHTML = data.txt_pastelChocoDesc;
   document.getElementById('txt_ofertaEspecial').innerHTML = data.txt_ofertaEspecial;
   document.getElementById('txt_ofertaEspecialDesc').innerHTML = data.txt_ofertaEspecialDesc;
+  document.getElementById('txt_BtnAdd').innerHTML = data.txt_BtnAdd;
+  document.getElementById('txt_BtnAdd1').innerHTML = data.txt_BtnAdd1;
+  document.getElementById('txt_BtnAdd2').innerHTML = data.txt_BtnAdd2;
+  document.getElementById('txt_BtnAdd3').innerHTML = data.txt_BtnAdd3;
+  document.getElementById('txt_BtnAdd4').innerHTML = data.txt_BtnAdd4;
+  document.getElementById('txt_BtnAdd5').innerHTML = data.txt_BtnAdd5;
+  document.getElementById('txt_BtnAdd6').innerHTML = data.txt_BtnAdd6;
+  document.getElementById('txt_BtnAdd7').innerHTML = data.txt_BtnAdd7;
+  document.getElementById('txt_BtnAdd8').innerHTML = data.txt_BtnAdd8;
 }

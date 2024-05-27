@@ -63,7 +63,10 @@ button#addToCart {
 .contenido{
   padding: 20px;
 }
+.footer {
+  display: none;
 
+}
 }
 
 
