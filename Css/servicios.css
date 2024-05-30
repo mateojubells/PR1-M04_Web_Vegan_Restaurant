@@ -134,6 +134,7 @@ h1 {
     grid-template-areas:
       "title title"
       "menu takeaway";
+      margin-bottom: 200px;
   }
 
   .card-container {

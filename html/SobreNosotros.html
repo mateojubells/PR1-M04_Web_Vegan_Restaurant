@@ -6,55 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestion de eventos la salle</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/Css/reset.css">
-    <link rel="stylesheet" href="/Css/header.css">
-    <link rel="stylesheet" href="/Css/SobreNosotros.css">
-    <link>
+  <link rel="stylesheet" href="/Css/reset.css">
+  <link rel="stylesheet" href="/Css/header.css">
+  <link rel="stylesheet" href="/Css/SobreNosotros.css">
 </head>
 <body>
+  <div id="overlay" onclick="toggleMenu()"></div>
   <header>
-    <div class="grid-container-2">
+    <div class="header-container">
+      <a class="foto1" href="../index.html"><img class="imagen" src="../imagenes/logopractica1.svg" alt="Logo"></a>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
+    <nav class="grid-container-2">
       <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
-      <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
+
+      <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
       <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras">Compras</a>
       <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros">Sobre Nosotros</a>
       <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva">Reserva</a>
-     </div>
-     <div class="botonesidioma">
+    </nav>
+    <div class="botonesidioma">
       <button onclick="changeLanguage('ca')">Cat</button>
       <button onclick="changeLanguage('es')">Esp</button>
       <button onclick="changeLanguage('en')">Eng</button>
     </div>
-    <script src="/javaScript/sobreNosotros.js"></script>
+    <nav class="menu-lateral" id="menu-lateral">
+      <a class="foto1" href="../index.html"><img class="imagen" src="../imagenes/logopractica1.svg" alt="Logo"></a>
+      <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios1">Servicios</a>
+      <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras1">Compras</a>
+      <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros1">Sobre Nosotros</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva1">Reserva</a>
+      <div class="botonesidioma1">
+        <button onclick="changeLanguage('ca')">Cat</button>
+        <button onclick="changeLanguage('es')">Esp</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+      <script src="/javaScript/sobreNosotros.js"></script>
+
+    </nav>
   </header> 
-</body>
 
-<main class="about-us">
-  <section class="about-section">
-    <h1 class="items sub-item" id="txt_nuestraHistoria">Nuestra Historia</h1>
-    <div class="content">
-      <img src="/imagenes/6384ad9fa7079d4d24f01ebe_formar empleados restaurante.jpg" alt="Imagen 1" class="imagen1">
-      <p class="items sub-item" id="txt_textIntroduccio">
-        ¡Bienvenido a nuestro restaurante vegano! Sumérgete en una experiencia culinaria excepcional, donde la pasión por la comida sana y deliciosa se entrelaza con una narrativa única y cautivadora. Desde el inicio de nuestro viaje, nuestro anhelo ha sido compartir la alegría y los beneficios de una dieta basada en plantas. Cada bocado delicioso que ofrecemos no solo deleita el paladar, sino que también representa un compromiso con transformar vidas mediante opciones alimenticias saludables y sostenibles. Descubre la magia de nuestra propuesta gastronómica, donde cada platillo es una obra maestra creada con ingredientes frescos y conscientemente seleccionados. ¡Te invitamos a unirte a nosotros en este emocionante viaje hacia una vida más saludable y deliciosa!      </p>
-    </div>
-  </section>
+  <main class="about-us">
+    <section class="about-section">
+      <h1 class="items sub-item" id="txt_nuestraHistoria">Nuestra Historia</h1>
+      <div class="content">
+        <div class="text">
+          <p class="items sub-item" id="txt_textIntroduccio">
+            ¡Bienvenido a nuestro restaurante vegano! Sumérgete en una experiencia culinaria excepcional, donde la pasión por la comida sana y deliciosa se entrelaza con una narrativa única y cautivadora. Desde el inicio de nuestro viaje, nuestro anhelo ha sido compartir la alegría y los beneficios de una dieta basada en plantas. Cada bocado delicioso que ofrecemos no solo deleita el paladar, sino que también representa un compromiso con transformar vidas mediante opciones alimenticias saludables y sostenibles. Descubre la magia de nuestra propuesta gastronómica, donde cada platillo es una obra maestra creada con ingredientes frescos y conscientemente seleccionados. ¡Te invitamos a unirte a nosotros en este emocionante viaje hacia una vida más saludable y deliciosa!
+          </p>
+        </div>
+        <div class="image">
+          <img src="/imagenes/6384ad9fa7079d4d24f01ebe_formar empleados restaurante.jpg" alt="Imagen 1" class="imagen1">
+        </div>
+      </div>
+    </section>
 
-  <section class="about-section">
-    <h1 class="items sub-item" id="txt_nuestraFilosofia">Nuestra Filosofía</h1>
-    <div class="content">
-      <p class="items sub-item" id="txt_textIntroduccio2">
-        En el corazón de nuestro restaurante se encuentra una filosofía arraigada en el respeto por la vida y el planeta. Creemos que cada elección cuenta, y es por eso que nos esforzamos por ofrecer opciones sabrosas que nutren tanto el cuerpo como el alma. Únete a nosotros en este viaje hacia un estilo de vida más saludable y sostenible.
-      </p>
-      <img src="/imagenes/platos-veganos-portada-1280x720x80xX.jpg" alt="Imagen 2" class="imagen2">
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <ul class="lastcolumnfooter">
-    <li><img src="/imagenes/logopractica1.svg" alt="" class="imagenfooter"></li>
-  </ul>
-  <ul class="secondfooter">
-    <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a> </li>
+    <section class="about-section">
+      <h1 class="items sub-item" id="txt_nuestraFilosofia">Nuestra Filosofía</h1>
+      <div class="content reverse">
+        <div class="text">
+          <p class="items sub-item" id="txt_textIntroduccio2">
+            En el corazón de nuestro restaurante se encuentra una filosofía arraigada en el respeto por la vida y el planeta. Creemos que cada elección cuenta, y es por eso que nos esforzamos por ofrecer opciones sabrosas que nutren tanto el cuerpo como el alma. Únete a nosotros en este viaje hacia un estilo de vida más saludable y sostenible.
+          </p>
+        </div>
+        <div class="image">
+          <img src="/imagenes/platos-veganos-portada-1280x720x80xX.jpg" alt="Imagen 2" class="imagen2">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="lastcolumnfooter">
+      <li><img src="/imagenes/logopractica1.svg" alt="Logo" class="imagenfooter"></li>
+    </ul>
+    <ul class="secondfooter">
+      <li><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a></li>
       <span class="span"></span>
       <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_footer_sobreNosotros">Sobre Nosotros</a></li>
       <span class="span"></span>
@@ -62,7 +91,31 @@
     </ul>
     <ul class="lastcolumnfooter">
       <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
-  </ul>
-  
-</footer>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu-lateral');
+      const overlay = document.getElementById('overlay');
+      const body = document.body;
+
+      menu.classList.toggle('active');
+      overlay.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    }
+
+    document.addEventListener('click', function(event) {
+      const menu = document.getElementById('menu-lateral');
+      const overlay = document.getElementById('overlay');
+      const hamburger = document.querySelector('.hamburger-menu');
+
+      if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>
+</body>
 </html>

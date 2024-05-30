@@ -12,19 +12,41 @@
 
 </head>
 <body>
+  <div id="overlay" onclick="toggleMenu()"></div>
+
   <header>
+    <div class="header-container">
+      <a class="foto1" href="../index.html"><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
     <nav class="grid-container-2">
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+      <a href="/html/Menu.html" class="items sub-item" id="txt_header_menu1">Menu</a>
+      <a href="/html/Producto.html" class="items sub-item" id="txt_header_productoEspecial1">Producto Especial</a>
+      <a href="pedido.html" class="contact" id="txt_header_pedido1">Pedido</a>
+     </nav>
+     <div class="botonesidioma">
+      <button onclick="changeLanguage('ca')">Cat</button>
+      <button onclick="changeLanguage('es')">Esp</button>
+      <button onclick="changeLanguage('en')">Eng</button>
+    </div>
+    
+    <nav class="menu-lateral" id="menu-lateral">
       <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
       <a href="/html/Menu.html" class="items sub-item" id="txt_header_menu">Menu</a>
       <a href="/html/Producto.html" class="items sub-item" id="txt_header_productoEspecial">Producto Especial</a>
       <a href="/html/pedido.html" class="contact" id="txt_header_pedido">Pedido</a>
-     </nav>
-      <div class="botonesidioma">
+     
+      <div class="botonesidioma1">
         <button onclick="changeLanguage('ca')">Cat</button>
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
+    
       </div>
       <script src="/javaScript/producto.js"></script>
+    </nav>
   </header> 
 
 </body>
@@ -70,6 +92,27 @@
         <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
     </ul>
   </footer>
-
-
+  <script>
+    function toggleMenu() {
+   const menu = document.getElementById('menu-lateral');
+   const overlay = document.getElementById('overlay');
+   const body = document.body;
+  
+   menu.classList.toggle('active');
+   overlay.classList.toggle('active');
+   body.classList.toggle('no-scroll');
+  }
+  
+  document.addEventListener('click', function(event) {
+   const menu = document.getElementById('menu-lateral');
+   const overlay = document.getElementById('overlay');
+   const hamburger = document.querySelector('.hamburger-menu');
+  
+   if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+     menu.classList.remove('active');
+     overlay.classList.remove('active');
+     document.body.classList.remove('no-scroll');
+   }
+  });
+   </script>
 </html>

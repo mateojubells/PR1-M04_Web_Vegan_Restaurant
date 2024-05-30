@@ -1,170 +1,213 @@
 /* General Styles */
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: helvetica; 
-    background-color: rgb(92,140,122);
-  }
-  
-  /* CABECERA */
-  header {
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(55,121,95);
-  }
-  
-  button {
-    background-color: rgb(208,255,171);
-    border: 0px;
-    margin-bottom: 2px;
-    min-width: 60px; /* Add this line */
-    min-height: 30px; /* Add this line */
-  }
-  
-  .items {
-    margin: 20px;
-    justify-content: center;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  header .items {
-    color: white;
-  }
-  
-  header .sub-item:hover {
-    transform: scale(1.2);
-  }
-  
-  .contact { 
-    color: rgb(55,121,95);
-    text-decoration: none;
-    margin: 6px;
-    padding: 10px;
-    background-color: rgb(208,255,171);
-    border: solid;
-    border-radius: 15px; 
-    position: relative;
-    display: inline-block;
-    cursor: pointer; 
-  }
-  
-  .contact:hover {
-    transform: scale(1.05);
-  }
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(92, 140, 122);
+}
+
+/* CABECERA */
+header {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(55, 121, 95);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(208, 255, 171);
+  border: 0;
+  margin-bottom: 2px;
+  min-width: 60px;
+  min-height: 30px;
+}
+
+.items {
+  margin: 20px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+header .items {
+  color: white;
+}
+
+header .sub-item:hover {
+  transform: scale(1.2);
+}
+
+.contact {
+  color: rgb(55, 121, 95);
+  text-decoration: none;
+  margin: 6px;
+  padding: 10px;
+  background-color: rgb(208, 255, 171);
+  border: solid;
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: center;
+}
+
+.imagen {
+  height: 40px;
+  width: 120px;
+  margin-top: 7px;
+  padding: 0;
+}
+
+/* Estilos del icono de hamburguesa */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+
+/* Estilos del menú lateral */
+.menu-lateral {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1001;
+  color: black; /* Text color */
+}
+
+.menu-lateral.active {
+  display: flex;
+}
+
+.menu-lateral .items,
+.menu-lateral .contact,
+.menu-lateral .botonesidioma {
+  padding: 10px;
+  text-align: left;
+  color: black; /* Text color */
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+#overlay.active {
+  display: block;
+}
+
+/* Desactivar scroll */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* FOOTER */
+.footer {
+  align-content: center;
+  text-align: center;
+  font-family: alegreya-light;
+  font-size: 13px;
+  color: rgb(115, 104, 104);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  height: 100px;
+  background-color: white;
+}
+
+.imagenfooter {
+  width: 120px;
+  height: 40px;
+}
+
+.secondfooter {
+  text-decoration: none;
+  display: grid;
+  margin: 10px;
+  color: white;
+}
+
+.lastcolumnfooter {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.span {
+  height: 10px;
+  width: 5px;
+}
+
+li {
+  text-decoration: none;
+}
+
+.itemsfooter {
+  color: black;
+}
+
+.contactfooter {
+  color: rgb(55, 121, 95);
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(208, 255, 171);
+  border: solid;
+  border-radius: 15px;
+  border-width: 3px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contactfooter:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .grid-container-2 {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    justify-content: center;
+    display: none;
   }
-  
-  .imagen {
-    height: 40px;
-    width: 120px;
-    margin-top: 7px;
-    padding: 0px;
+  .botonesidioma{
+    display:  none;
   }
-  
-  /* FIN CABEZERA */
-  
-  /* FOOTER */
-  
-  .footer {
-    align-content: center;
-    text-align: center;
-    font-family: alegreya-light;
-    font-size: 13px;
-    color: rgb(115, 104, 104);
-    font-size: 13px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
-    height: 100px;
-    background-color: white;
+
+  .hamburger-menu {
+    display: block;
   }
-  
-  .imagenfooter {
-    width: 120px;
-    height: 40px;
+}
+@media (min-width: 768px) {
+  .foto1{
+    display: none;
   }
-  
-  .secondfooter {
-    text-decoration: none;
-    display: grid;
-    margin: 10px;
-    color: white;
-  }
-  
-  .lastcolumnfooter {
-    text-align: center;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .span {
-    height: 10px;
-    width: 5px;
-  }
-  
-  li {
-    text-decoration: none;
-  }
-  
-  .itemsfooter {
-    color: black;
-  }
-  
-  .contactfooter {
-    color: rgb(55,121,95);
-    text-decoration: none;
-    padding: 10px;
-    background-color: rgb(208,255,171);
-    border: solid;
-    border-radius: 15px; 
-    border-width: 3px;
-    position: relative;
-    display: inline-block;
-    cursor: pointer; 
-  }
-  
-  .contactfooter:hover {
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      align-items: center;
-      display: inline;
-      justify-content: center;
-      grid-gap: 0px;
-    }
-  
-    .footer {
-      width: 100%;
-    }
-  
-    .grid-container-2 {
-      background-color: rgb(55,121,95);
-      font-size: 10px;
-      display: flex;
-      flex-direction: column; /* Add this line */
-      justify-content: flex-start;
-      padding: 0px;
-      margin: 0px;
-      align-items: center;
-      align-content: center;
-      grid-gap: 5px;
-    }
-  
-    .items {
-      margin: 0px;
-      margin-top: 5px;
-      padding: 5px;
-      font-size: 18px; /* Add this line */
-    }
-  }
-  
+}

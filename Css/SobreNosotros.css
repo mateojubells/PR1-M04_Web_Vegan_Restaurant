@@ -1,102 +1,70 @@
 .about-section h1 {
   text-align: center;
   font-size: 24px;
+  margin-bottom: 20px;
+  color:  white;
 }
 
 .content {
-  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 70px;
-  line-height: 1.8;
+  padding: 20px;
+  gap: 20px;
+  color: white;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text p {
+  line-height: 1.6; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Tamaño de imagen para pantallas grandes */
+@media (min-width: 1024px) {
+  .image img {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column-reverse;
-  }
-
-  .content img {
+  .image img {
     max-width: 100%;
-    margin-top: 10px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Telefono */
-  h1{
-    padding-top: 20px;
+  .content {
+    padding: 10px;
   }
-  main{
-    padding: 0;
+
+  h1 {
+    padding: 10px 0;
   }
-  .about-us{
-    width: 100%;
-    padding: 0;
-  }
-  .about-section{
-    width: 100%;
-    padding: 0;
-    text-align: justify; 
-  }
-  .imagen1, .imagen2{
-    width: 100%;
-    padding: 20px;
-  }
-  .content{
-    flex-direction: column-reverse;
-  }
+
   .footer {
-    display: none; 
-  }
-}
-
-@media (min-width: 480px), (max-width: 1185px) {
-  /* Tablet */
-  h1{
-    padding: 40px;
-  }
-  
-  .content{
-    padding: 0;
-    margin: 0;
-    flex-direction: column-reverse;
-  }
-  .about-section p{
-    font-size: 16px; /* Increased font size */
-    padding: 15px;
-    max-width: 100%;
-  }
-  main{
-    padding: 0;
-  }
-  .about-us{
-    width: 100%;
-    padding: 0;
-  }
-  .about-section{
-    width: 100%;
-    padding: 0;
-    text-align: justify; 
-  }
-  .imagen1, .imagen2{
-    width: 100%;
-    padding: 20px;
-  }
-}
-
-@media (min-width: 1185px){
-  /* PC */
-  .about-section p{
-    font-size: 18px;
-    padding: 15px;
-    max-width: 100%;
-  }
-
-  .content{
-    padding: 30px;
-    margin: 0;
+    display: none;
   }
 }

@@ -12,21 +12,42 @@
      
   </head>
   <body>
+    <div id="overlay" onclick="toggleMenu()"></div>
     <header>
+      <div class="header-container">
+        <a class="foto1" href="../index.html"><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span class="material-icons">menu</span>
+        </div>
+      </div>
       <nav class="grid-container-2">
         <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
-        <a href="/html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
+        <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
         <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras">Compras</a>
         <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros">Sobre Nosotros</a>
         <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva">Reserva</a>
        </nav>
-        <div class="botonesidioma">
+       <div class="botonesidioma">
+        <button onclick="changeLanguage('ca')">Cat</button>
+        <button onclick="changeLanguage('es')">Esp</button>
+        <button onclick="changeLanguage('en')">Eng</button>
+      </div>
+      <script src="/javaScript/servicios.js"></script>
+      <nav class="menu-lateral" id="menu-lateral">
+        <a class="foto1" href="../index.html"><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+        <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios1">Servicios</a>
+        <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras1">Compras</a>
+        <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros1">Sobre Nosotros</a>
+        <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva1">Reserva</a>
+        <div class="botonesidioma1">
           <button onclick="changeLanguage('ca')">Cat</button>
           <button onclick="changeLanguage('es')">Esp</button>
           <button onclick="changeLanguage('en')">Eng</button>
         </div>
         <script src="/javaScript/servicios.js"></script>
-    </header> 
+      </nav>
+    </header>
+    
 
     <main class="grid-layout">
       <section id="title-section" class="prueba">
@@ -62,6 +83,29 @@
           <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
       </ul>
     </footer>
-    
+    <script>
+      function toggleMenu() {
+     const menu = document.getElementById('menu-lateral');
+     const overlay = document.getElementById('overlay');
+     const body = document.body;
+   
+     menu.classList.toggle('active');
+     overlay.classList.toggle('active');
+     body.classList.toggle('no-scroll');
+   }
+   
+   document.addEventListener('click', function(event) {
+     const menu = document.getElementById('menu-lateral');
+     const overlay = document.getElementById('overlay');
+     const hamburger = document.querySelector('.hamburger-menu');
+   
+     if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+       menu.classList.remove('active');
+       overlay.classList.remove('active');
+       document.body.classList.remove('no-scroll');
+     }
+   });
+   
+     </script>
   </body>
 </html>

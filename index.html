@@ -6,86 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Vegano</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/Css/reset.css">
-    <link rel="stylesheet" href="/Css/header.css">
-    <link rel="stylesheet" href="/Css/index.css">
+  <link rel="stylesheet" href="/Css/reset.css">
+  <link rel="stylesheet" href="/Css/header.css">
+  <link rel="stylesheet" href="/Css/index.css">
 </head>
 <body>
+  <div id="overlay" onclick="toggleMenu()"></div>
   <header>
+    <div class="header-container">
+      <a class="foto1" href="./index.html"><img class="imagen" src="./imagenes/logopractica1.svg" alt=""></a>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
     <nav class="grid-container-2">
-      <a class="foto" href="./index.html" ><img class="imagen" src="./imagenes/logopractica1.svg" alt=""></a>
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+
       <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios">Servicios</a>
       <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras">Compras</a>
       <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros">Sobre Nosotros</a>
       <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva">Reserva</a>
      </nav>
-      <div class="botonesidioma">
+     <div class="botonesidioma">
+      <button onclick="changeLanguage('ca')">Cat</button>
+      <button onclick="changeLanguage('es')">Esp</button>
+      <button onclick="changeLanguage('en')">Eng</button>
+    </div>
+    <script src="/javaScript/index.js"></script>
+    <nav class="menu-lateral" id="menu-lateral">
+      <a class="foto" href="../index.html" ><img class="imagen" src="../imagenes/logopractica1.svg" alt=""></a>
+      <a href="../html/servicios.html" class="items sub-item" id="txt_header_servicios1">Servicios</a>
+      <a href="/html/Menu.html" class="items sub-item" id="txt_header_compras1">Compras</a>
+      <a href="/html/SobreNosotros.html" class="items sub-item" id="txt_header_sobreNosotros1">Sobre Nosotros</a>
+      <a href="/html/Contactanos.html" class="contact" id="txt_header_reserva1">Reserva</a>
+      <div class="botonesidioma1">
         <button onclick="changeLanguage('ca')">Cat</button>
         <button onclick="changeLanguage('es')">Esp</button>
         <button onclick="changeLanguage('en')">Eng</button>
       </div>
       <script src="/javaScript/index.js"></script>
-  </header> 
+    </nav>
+   
+  </header>
   <main>
-  <section class="section1">
-
-    <div class="fondotextop">
-      <a class="textop" id="txt_section1">RESTAURANTE 100% VEGANO</a>
-    </div>
-  </section>
-  <section class="nuevo-apartado">
-    <div class="contenido-nuevo-apartado">
-      <h2 class="titulo_nuevo_apartado" id="txt_titulo_nuevo_apartado">Descubre nuestra filosofía</h2>
-      <p class="descripcion_nuevo_apartado" id="txt_descripcion_nuevo_apartado">
-        En nuestro restaurante vegano, nos esforzamos por crear una experiencia culinaria sostenible y deliciosa para todos nuestros clientes. 
-        Cada plato que servimos está cuidadosamente elaborado con ingredientes frescos y de origen local, respetando el medio ambiente y apoyando a los agricultores locales. 
-        Queremos que cada bocado sea una celebración de la comida vegana, una experiencia que te conecte con la naturaleza y te haga sentir bien contigo mismo.
-        ¡Únete a nosotros en esta aventura culinaria y descubre un mundo de sabores, ética y sostenibilidad!
-      </p>
-    </div>
-  </section>
-
-
-
-  <section class="section2">
-    <h2 class="titulo-section2" id="txt_section2">Descubre nuestros servicios</h2>
-    <div class="grid-layout">
-      <a id="comerAqui" class="card-container" href="html/Contactanos.html">
-        <img src="/imagenes/comerAqui.png" alt="" />
-        <h3 id="txt_comerAquiIndex">COMER AQUI</h3>
-        <p class="text" id="txt_descripcioComerAqui">
-          Descubre el placer en cada bocado de nuestro rincón vegano
+    <section class="section1">
+      <div class="fondotextop">
+        <a class="textop" id="txt_section1">RESTAURANTE 100% VEGANO</a>
+      </div>
+    </section>
+    <section class="nuevo-apartado">
+      <div class="contenido-nuevo-apartado">
+        <h2 class="titulo_nuevo_apartado" id="txt_titulo_nuevo_apartado">Descubre nuestra filosofía</h2>
+        <p class="descripcion_nuevo_apartado" id="txt_descripcion_nuevo_apartado">
+          En nuestro restaurante vegano, nos esforzamos por crear una experiencia culinaria sostenible y deliciosa para todos nuestros clientes. 
+          Cada plato que servimos está cuidadosamente elaborado con ingredientes frescos y de origen local, respetando el medio ambiente y apoyando a los agricultores locales. 
+          Queremos que cada bocado sea una celebración de la comida vegana, una experiencia que te conecte con la naturaleza y te haga sentir bien contigo mismo.
+          ¡Únete a nosotros en esta aventura culinaria y descubre un mundo de sabores, ética y sostenibilidad!
         </p>
-      </a>
-  
-      <a id="takeAway" class="card-container" href="html/Menu.html">
-        <img src="/imagenes/takeaway.jpg" alt="" />  
-        <h3 id="txt_takeAwayIndex">TAKE AWAY</h3>
-        <p class="text" id="txt_disfrutaCasa">
-          Disfruta de la misma comida en casa
-        </p>
-      </a>
-    </div>
-  </section>
-  
-
+      </div>
+    </section>
+    <section class="section2">
+      <h2 class="titulo-section2" id="txt_section2">Descubre nuestros servicios</h2>
+      <div class="grid-layout">
+        <a id="comerAqui" class="card-container" href="html/Contactanos.html">
+          <img src="/imagenes/comerAqui.png" alt="" />
+          <h3 id="txt_comerAquiIndex">COMER AQUI</h3>
+          <p class="text" id="txt_descripcioComerAqui">
+            Descubre el placer en cada bocado de nuestro rincón vegano
+          </p>
+        </a>
+        <a id="takeAway" class="card-container" href="html/Menu.html">
+          <img src="/imagenes/takeaway.jpg" alt="" />
+          <h3 id="txt_takeAwayIndex">TAKE AWAY</h3>
+          <p class="text" id="txt_disfrutaCasa">
+            Disfruta de la misma comida en casa
+          </p>
+        </a>
+      </div>
+    </section>
   </main>
-<a href="/html/servicios.html" class="b-see-more" id="txt_verMas">VER MÁS</a>
   <footer class="footer">
     <ul class="lastcolumnfooter">
       <li><img src="./imagenes/logopractica1.svg" alt="" class="imagenfooter"></li>
     </ul>
     <ul class="secondfooter">
-      <li ><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a> </li>
-        <span class="span"></span>
-        <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_footer_sobreNosotros">Sobre Nosotros</a></li>
-        <span class="span"></span>
-        <li><a class="itemsfooter" href="/html/pedido.html" id="txt_footer_Pedido">Pedido</a></li>
-      </ul>
-      <ul class="lastcolumnfooter">
-        <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
+      <li><a class="itemsfooter" href="/html/servicios.html" id="txt_footer_servicios">Servicios</a></li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="/html/SobreNosotros.html" id="txt_footer_sobreNosotros">Sobre Nosotros</a></li>
+      <span class="span"></span>
+      <li><a class="itemsfooter" href="/html/pedido.html" id="txt_footer_Pedido">Pedido</a></li>
     </ul>
-    
+    <ul class="lastcolumnfooter">
+      <li><a href="/html/Contactanos.html" class="contactfooter" id="txt_footer_reserva">Reserva</a></li>
+    </ul>
   </footer>
+  <script>
+   function toggleMenu() {
+  const menu = document.getElementById('menu-lateral');
+  const overlay = document.getElementById('overlay');
+  const body = document.body;
+
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  body.classList.toggle('no-scroll');
+}
+
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('menu-lateral');
+  const overlay = document.getElementById('overlay');
+  const hamburger = document.querySelector('.hamburger-menu');
+
+  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+  }
+});
+
+  </script>
 </body>
 </html>

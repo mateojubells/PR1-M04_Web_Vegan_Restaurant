@@ -15,6 +15,9 @@ async function changeLanguage(lang) {
   document.getElementById('txt_header_menu').innerHTML = data.txt_header_menu;
   document.getElementById('txt_header_productoEspecial').innerHTML = data.txt_header_productoEspecial;
   document.getElementById('txt_header_pedido').innerHTML = data.txt_header_pedido;
+  document.getElementById('txt_header_menu1').innerHTML = data.txt_header_menu1;
+  document.getElementById('txt_header_productoEspecial1').innerHTML = data.txt_header_productoEspecial1;
+  document.getElementById('txt_header_pedido1').innerHTML = data.txt_header_pedido1;
 
   document.getElementById('txt_footer_Pedido').innerHTML = data.txt_footer_Pedido;
   document.getElementById('txt_footer_servicios').innerHTML = data.txt_footer_servicios;
